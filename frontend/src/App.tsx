@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from 'views/Home';
 import Cursos from 'views/Cursos';
 import Consultas from 'views/Consultas';
@@ -10,7 +11,18 @@ import AgendarConsultaOnline from 'views/AgendarConsultaOnline';
 
 function App() {
   return (
-    <AgendarConsultaOnline />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/cursos' element={<Cursos />} />
+        <Route path='/consultas' element={<Consultas />} />
+        <Route path='/aavet' element={<AAvet />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/faleConosco' element={<FaleConosco />} />
+        <Route path='/inscricaoOnline' element={<InscricaoOnline />} />
+        <Route path='/agendarConsultaOnline' element={<AgendarConsultaOnline />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
