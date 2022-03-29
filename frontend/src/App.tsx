@@ -10,7 +10,7 @@ import AgendarConsultaOnline from 'views/AgendarConsultaOnline';
 
 function App() {
   return (
-    <InscricaoOnline />
+    <AgendarConsultaOnline />
   );
 }
 
