@@ -1,4 +1,5 @@
 import Header from "components/Header";
+import Footer from "components/Footer";
 
 function AAvet() {
   return (
@@ -37,9 +38,7 @@ function AAvet() {
       <h3>AQUI VAI UMA IMAGEM</h3>
       <h3>AQUI VAI UMA IMAGEM</h3>
 
-      <h1>FOOTER</h1>
-      <h4>&copy; 2017 Avet Cursos. Todos os direitos reservados.</h4>
-      <h3>AQUI VAI UMA IMAGEM</h3>
+      <Footer />
     </>
   );
 };
