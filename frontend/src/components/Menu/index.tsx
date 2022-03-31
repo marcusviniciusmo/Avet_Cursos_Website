@@ -6,42 +6,42 @@ function Menu() {
   return (
     <menu id="menuContainer">
       <ul id="menuList">
-        <Link to="/">
+        <Link to="/" className="btnDecorationNone">
           <MenuItem
             textButton="Home"
             id="btnHome" />
         </Link>
-        <Link to="/cursos">
+        <Link to="/cursos" className="btnDecorationNone">
           <MenuItem
             textButton="Cursos"
             id="btnCursos" />
         </Link>
-        <Link to="/consultas">
+        <Link to="/consultas" className="btnDecorationNone">
           <MenuItem
             textButton="Consultas"
             id="btnConsultas" />
         </Link>
-        <Link to="/aavet">
+        <Link to="/aavet" className="btnDecorationNone">
           <MenuItem
             textButton="A Avet"
             id="btnAAvet" />
         </Link>
-        <Link to="/blog">
+        <Link to="/blog" className="btnDecorationNone">
           <MenuItem
             textButton="Blog"
             id="btnBlog" />
         </Link>
-        <Link to="/faleConosco">
+        <Link to="/faleConosco" className="btnDecorationNone">
           <MenuItem
             textButton="Fale Conosco"
             id="btnFaleConosco" />
         </Link>
-        <Link to="/inscricaoOnline">
+        <Link to="/inscricaoOnline" className="btnDecorationNone">
           <MenuItem
             textButton="Inscrição Online"
             id="btnInscricaoOnline" />
         </Link>
-        <Link to="/agendarConsultaOnline">
+        <Link to="/agendarConsultaOnline" className="btnDecorationNone">
           <MenuItem
             textButton="Agendar Consulta Online"
             id="btnAgendarConsultaOnline" />
