@@ -1,12 +1,15 @@
+import { ToUpperCaseText } from "utils/Functions";
+
 type Props = {
-  textButton: string
+  textButton: string,
+  id: string
 };
 
-function MenuItem({ textButton }: Props) {
+function MenuItem({ textButton, id }: Props) {
   return (
-    <>
-      Item de Menu - {textButton}
-    </>
+    <li id={id}>
+      {ToUpperCaseText(textButton)}
+    </li>
   );
 };
 
