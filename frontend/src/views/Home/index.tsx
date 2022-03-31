@@ -1,4 +1,5 @@
 import Header from "components/Header";
+import CarouselSlider from "components/CarouselSlider";
 import Footer from "components/Footer";
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
       <Header />
 
       <h1>BODY</h1>
-      <h3>AQUI VAI UM SLIDER</h3>
+      <CarouselSlider />
 
       <Footer />
     </>
