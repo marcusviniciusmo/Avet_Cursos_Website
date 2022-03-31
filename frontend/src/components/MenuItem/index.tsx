@@ -1,4 +1,5 @@
 import { ToUpperCaseText } from "utils/Functions";
+import './styles.css';
 
 type Props = {
   textButton: string,

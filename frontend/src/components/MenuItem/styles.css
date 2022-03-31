@@ -1,0 +1,45 @@
+li {
+  color: #FFFFFF;
+  width: 141px;
+  height: 41px;
+  margin: 0 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+li#btnHome,
+li#btnCursos,
+li#btnConsultas,
+li#btnAAvet,
+li#btnBlog,
+li#btnFaleConosco {
+  background: #86B144;
+}
+
+li#btnHome:hover,
+li#btnCursos:hover,
+li#btnConsultas:hover,
+li#btnAAvet:hover,
+li#btnBlog:hover,
+li#btnFaleConosco:hover {
+  background: #096439;
+}
+
+li#btnInscricaoOnline {
+  background: #D28F00;
+}
+
+li#btnInscricaoOnline:hover {
+  background: #FFAE00;
+}
+
+li#btnAgendarConsultaOnline {
+  background: #B14444;
+}
+
+li#btnAgendarConsultaOnline:hover {
+  background: #FF0000;
+}
