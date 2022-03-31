@@ -6,3 +6,9 @@ yarn add react-router-dom@6.2.1 @types/react-router-dom@5.3.2
 
 // Font Roboto
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Font Awesome
+yarn add @fortawesome/fontawesome-svg-core
+yarn add @fortawesome/free-solid-svg-icons
+yarn add @fortawesome/free-regular-svg-icons
+yarn add @fortawesome/react-fontawesome@latest
