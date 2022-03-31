@@ -7,36 +7,24 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
 
 function CarouselSlider() {
+  const slideInterval = 2000;
+  const slides = [SlideAvet01, SlideAvet02, SlideAvet03, SlideAvet04];
+
   return (
     <div id='carouselSliderContainer'>
       <Carousel>
-        <CarouselItem interval={2000}>
-          <img
-            className='d-block w-100'
-            src={SlideAvet01}
-            alt="Slide Avet Cursos" />
-        </CarouselItem>
-
-        <CarouselItem interval={2000}>
-          <img
-            className='d-block w-100'
-            src={SlideAvet02}
-            alt="Slide Avet Cursos" />
-        </CarouselItem>
-
-        <CarouselItem interval={2000}>
-          <img
-            className='d-block w-100'
-            src={SlideAvet03}
-            alt="Slide Avet Cursos" />
-        </CarouselItem>
-
-        <CarouselItem interval={2000}>
-          <img
-            className='d-block w-100'
-            src={SlideAvet04}
-            alt="Slide Avet Cursos" />
-        </CarouselItem>
+        {
+          slides.map((slide) => {
+            return (
+              <CarouselItem interval={slideInterval}>
+                <img
+                  className='d-block w-100'
+                  src={slide}
+                  alt="Slide Avet Cursos" />
+              </CarouselItem>
+            )
+          })
+        }
       </Carousel>
     </div>
   );
