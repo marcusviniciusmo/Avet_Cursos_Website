@@ -1,4 +1,5 @@
 import Header from "components/Header";
+import CourseCard from "components/CourseCard";
 import Footer from "components/Footer";
 
 function Cursos() {
@@ -10,46 +11,33 @@ function Cursos() {
       <Header />
 
       <h1>BODY</h1>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h4>Auxiliar Veterinário</h4>
-      <h5>Completo</h5>
-      <h6>1 Ano</h6>
-      <h5>Módulo I</h5>
-      <h6>6 Meses</h6>
-      <h5>Módulo II</h5>
-      <h6>6 Meses</h6>
-      <h4>Período</h4>
-      <h5>Manhã</h5>
-      <h6>08h às 12h</h6>
-      <h5>Tarde</h5>
-      <h6>13:30 às 17:30</h6>
-      <h5>Noite</h5>
-      <h6>18:30 às 22:30</h6>
-      <h4>Grade Currícular</h4>
+      <CourseCard
+        imageUrl="AQUI VAI UMA IMAGEM"
+        imageDescription="Curso Auxiliar Veterinário logo"
+        courseTitle="Auxiliar Veterinário"
+        durationInfoHeader="Completo,Módulo I,Módulo II"
+        durationInfoBody="1 Ano,6 Meses,6 Meses"
+        periodInfoHeader="Manhã,Tarde,Noite"
+        periodInfoBody="08h às 12h,13:30 às 17:30,18:30 às 22:30"
+      />
 
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h4>Auxiliar em Silvestres e Exóticos</h4>
-      <h6>Duração de 6 Meses</h6>
-      <h4>Período</h4>
-      <h5>Manhã</h5>
-      <h6>08h às 12h</h6>
-      <h5>Tarde</h5>
-      <h6>13:30 às 17:30</h6>
-      <h5>Noite</h5>
-      <h6>18:30 às 22:30</h6>
-      <h4>Grade Currícular</h4>
+      <CourseCard
+        imageUrl="AQUI VAI UMA IMAGEM"
+        imageDescription="Curso Auxiliar em Silvestres e Exóticos logo"
+        courseTitle="Auxiliar em Silvestres e Exóticos"
+        durationInfoBody="Duração de 6 Meses"
+        periodInfoHeader="Manhã,Tarde,Noite"
+        periodInfoBody="08h às 12h,13:30 às 17:30,18:30 às 22:30"
+      />
 
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h4>Auxiliar em Instrumentação e Procedimentos Cirúrgicos</h4>
-      <h6>Duração de 6 Meses</h6>
-      <h4>Período</h4>
-      <h5>Manhã</h5>
-      <h6>08h às 12h</h6>
-      <h5>Tarde</h5>
-      <h6>13:30 às 17:30</h6>
-      <h5>Noite</h5>
-      <h6>18:30 às 22:30</h6>
-      <h4>Grade Currícular</h4>
+      <CourseCard
+        imageUrl="AQUI VAI UMA IMAGEM"
+        imageDescription="Curso Aux. Instrument. e Proced. Cirúrgicos logo"
+        courseTitle="Auxiliar em Instrumentação e Procedimentos Cirúrgicos"
+        durationInfoBody="Duração de 6 Meses"
+        periodInfoHeader="Manhã,Tarde,Noite"
+        periodInfoBody="08h às 12h,13:30 às 17:30,18:30 às 22:30"
+      />
 
       <h4>Incluso em todos os cursos</h4>
       <h3>AQUI VAI UMA IMAGEM</h3>
