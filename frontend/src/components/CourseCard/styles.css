@@ -1,0 +1,7 @@
+div#courseCardLogoContainer {
+  width: 242px;
+  height: 242px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}

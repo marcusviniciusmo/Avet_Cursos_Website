@@ -1,5 +1,8 @@
 import Header from "components/Header";
 import CourseCard from "components/CourseCard";
+import LogoAuxVeterinario from 'assets/img/cursos/auxiliarVet.png';
+import LogoAuxSilvestres from 'assets/img/cursos/auxSilvestre.png';
+import LogoAuxInstrument from 'assets/img/cursos/auxInstrument.png';
 import Footer from "components/Footer";
 
 function Cursos() {
@@ -12,7 +15,7 @@ function Cursos() {
 
       <h1>BODY</h1>
       <CourseCard
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={LogoAuxVeterinario}
         imageDescription="Curso Auxiliar Veterinário logo"
         courseTitle="Auxiliar Veterinário"
         durationInfoHeader="Completo,Módulo I,Módulo II"
@@ -22,7 +25,7 @@ function Cursos() {
       />
 
       <CourseCard
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={LogoAuxSilvestres}
         imageDescription="Curso Auxiliar em Silvestres e Exóticos logo"
         courseTitle="Auxiliar em Silvestres e Exóticos"
         durationInfoBody="Duração de 6 Meses"
@@ -31,7 +34,7 @@ function Cursos() {
       />
 
       <CourseCard
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={LogoAuxInstrument}
         imageDescription="Curso Aux. Instrument. e Proced. Cirúrgicos logo"
         courseTitle="Auxiliar em Instrumentação e Procedimentos Cirúrgicos"
         durationInfoBody="Duração de 6 Meses"
