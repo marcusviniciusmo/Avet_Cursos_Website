@@ -1,4 +1,5 @@
 import CourseDuration from 'components/CourseDuration';
+import CoursePeriod from 'components/CoursePeriod';
 import './styles.css';
 
 type Props = {
@@ -32,10 +33,10 @@ function CourseCard({
         infoBody={durationInfoBody}
       />
 
-      <h4>Período</h4>
-      <h5>{periodInfoHeader}</h5>
-      <h6>{periodInfoBody}</h6>
-      <h4>Grade Currícular</h4>
+      <CoursePeriod
+        infoHeader={periodInfoHeader}
+        infoBody={periodInfoBody}
+      />
     </>
   );
 };
