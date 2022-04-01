@@ -1,3 +1,4 @@
+import CourseDuration from 'components/CourseDuration';
 import './styles.css';
 
 type Props = {
@@ -25,8 +26,12 @@ function CourseCard({
         <img src={imageUrl} alt={imageDescription} />
       </div>
       <h1>{courseTitle}</h1>
-      <h5>{durationInfoHeader}</h5>
-      <h6>{durationInfoBody}</h6>
+
+      <CourseDuration
+        infoHeader={durationInfoHeader}
+        infoBody={durationInfoBody}
+      />
+
       <h4>Período</h4>
       <h5>{periodInfoHeader}</h5>
       <h6>{periodInfoBody}</h6>
