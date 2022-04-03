@@ -4,6 +4,7 @@ import LogoAuxVeterinario from 'assets/img/cursos/auxiliarVet.png';
 import LogoAuxSilvestres from 'assets/img/cursos/auxSilvestre.png';
 import LogoAuxInstrument from 'assets/img/cursos/auxInstrument.png';
 import Footer from "components/Footer";
+import './styles.css';
 
 function Cursos() {
   return (
@@ -14,33 +15,37 @@ function Cursos() {
       <Header />
 
       <h1>BODY</h1>
-      <CourseCard
-        imageUrl={LogoAuxVeterinario}
-        imageDescription="Curso Auxiliar Veterinário logo"
-        courseTitle="Auxiliar Veterinário"
-        durationInfoHeader="Completo,Módulo I,Módulo II"
-        durationInfoBody="1 Ano,6 Meses,6 Meses"
-        periodInfoHeader="Manhã,Tarde,Noite"
-        periodInfoBody="08h às 12h,13:30 às 17:30,18:30 às 22:30"
-      />
+      <div id="courseCards">
+        <CourseCard
+          imageUrl={LogoAuxVeterinario}
+          imageDescription="Curso Auxiliar Veterinário logo"
+          courseTitle="Auxiliar Veterinário"
+          durationInfoHeader="Completo,Módulo I,Módulo II"
+          durationInfoBody="1 Ano,6 Meses,6 Meses"
+          periodInfoHeader="Manhã,Tarde,Noite"
+          periodInfoBody="08h às 12h,13:30 às 17:30,18:30 às 22:30"
+          borderRight
+        />
 
-      <CourseCard
-        imageUrl={LogoAuxSilvestres}
-        imageDescription="Curso Auxiliar em Silvestres e Exóticos logo"
-        courseTitle="Auxiliar em Silvestres e Exóticos"
-        durationInfoBody="Duração de 6 Meses"
-        periodInfoHeader="Manhã,Tarde,Noite"
-        periodInfoBody="08h às 12h,13:30 às 17:30,18:30 às 22:30"
-      />
+        <CourseCard
+          imageUrl={LogoAuxSilvestres}
+          imageDescription="Curso Auxiliar em Silvestres e Exóticos logo"
+          courseTitle="Auxiliar em Silvestres e Exóticos"
+          durationInfoBody="Duração de 6 Meses"
+          periodInfoHeader="Manhã,Tarde,Noite"
+          periodInfoBody="08h às 12h,13:30 às 17:30,18:30 às 22:30"
+          borderRight
+        />
 
-      <CourseCard
-        imageUrl={LogoAuxInstrument}
-        imageDescription="Curso Aux. Instrument. e Proced. Cirúrgicos logo"
-        courseTitle="Auxiliar em Instrumentação e Procedimentos Cirúrgicos"
-        durationInfoBody="Duração de 6 Meses"
-        periodInfoHeader="Manhã,Tarde,Noite"
-        periodInfoBody="08h às 12h,13:30 às 17:30,18:30 às 22:30"
-      />
+        <CourseCard
+          imageUrl={LogoAuxInstrument}
+          imageDescription="Curso Aux. Instrument. e Proced. Cirúrgicos logo"
+          courseTitle="Auxiliar em Instrumentação e Procedimentos Cirúrgicos"
+          durationInfoBody="Duração de 6 Meses"
+          periodInfoHeader="Manhã,Tarde,Noite"
+          periodInfoBody="08h às 12h,13:30 às 17:30,18:30 às 22:30"
+        />
+      </div>
 
       <h4>Incluso em todos os cursos</h4>
       <h3>AQUI VAI UMA IMAGEM</h3>

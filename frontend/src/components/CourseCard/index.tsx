@@ -10,7 +10,8 @@ type Props = {
   durationInfoHeader?: string,
   durationInfoBody: string,
   periodInfoHeader: string,
-  periodInfoBody: string
+  periodInfoBody: string,
+  borderRight?: boolean
 };
 
 function CourseCard({
@@ -20,10 +21,14 @@ function CourseCard({
   durationInfoHeader,
   durationInfoBody,
   periodInfoHeader,
-  periodInfoBody
+  periodInfoBody,
+  borderRight
 }: Props) {
   return (
-    <div id='courseCardContainer'>
+    <div
+      id='courseCardContainer'
+      style={{ borderRight: borderRight ? '2px solid #D4E4DC' : 'none' }}
+    >
       <div id="courseCardLogoContainer">
         <img src={imageUrl} alt={imageDescription} />
       </div>
