@@ -1,37 +1,50 @@
+import { ToUpperCaseText } from 'utils/Functions';
+import './styles.css';
+
 type Props = {
   infoHeader?: string,
   infoBody: string
 };
 
 function CourseDuration({ infoHeader, infoBody }: Props) {
+  const durationCardWidth = 400;
+
   const header = infoHeader?.split(',');
   const body = infoBody.split(',');
 
   return (
-    <>
-      <div>
-        <tr>
-          {
-            header ?
-              header.map((h) => {
-                return (
-                  <td>{h}</td>
-                )
-              })
-              : <td></td>
-          }
-        </tr>
-        <tr>
-          {
-            body.map((b) => {
+    <div id="courseDurationContainer">
+      <tr>
+        {
+          header ?
+            header.map((h) => {
               return (
-                <td>{b}</td>
+                <td
+                  id='durationInfoHeader'
+                  style={{ width: (durationCardWidth / header.length) }}
+                >
+                  {ToUpperCaseText(h)}
+                </td>
               )
             })
-          }
-        </tr>
-      </div>
-    </>
+            : <td id='courseDurationInfoNull' />
+        }
+      </tr>
+      <tr>
+        {
+          body.map((b) => {
+            return (
+              <td
+                id='durationInfoBody'
+                style={{ width: (durationCardWidth / body.length) }}
+              >
+                {b}
+              </td>
+            )
+          })
+        }
+      </tr>
+    </div>
   );
 };
 

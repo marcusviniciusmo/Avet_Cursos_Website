@@ -1,0 +1,28 @@
+div#courseDurationContainer {
+  background: #096439;
+  width: 400px;
+  margin: 0 auto;
+}
+
+div#courseDurationContainer tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div#courseDurationContainer tr td {
+  text-align: center;
+}
+
+div#courseDurationContainer td#durationInfoHeader {
+  color: #FFFFFF;
+}
+
+div#courseDurationContainer td#durationInfoBody {
+  color: #86B144;
+  font-size: 15px;
+}
+
+div#courseDurationContainer td#courseDurationInfoNull {
+  height: 24px;
+}
