@@ -1,3 +1,4 @@
+import { ToUpperCaseText } from 'utils/Functions';
 import CourseDuration from 'components/CourseDuration';
 import CoursePeriod from 'components/CoursePeriod';
 import './styles.css';
@@ -22,11 +23,13 @@ function CourseCard({
   periodInfoBody
 }: Props) {
   return (
-    <>
+    <div id='courseCardContainer'>
       <div id="courseCardLogoContainer">
         <img src={imageUrl} alt={imageDescription} />
       </div>
-      <h1>{courseTitle}</h1>
+      <span id='courseCardTitle'>
+        {ToUpperCaseText(courseTitle)}
+      </span>
 
       <CourseDuration
         infoHeader={durationInfoHeader}
@@ -37,7 +40,7 @@ function CourseCard({
         infoHeader={periodInfoHeader}
         infoBody={periodInfoBody}
       />
-    </>
+    </div>
   );
 };
 
