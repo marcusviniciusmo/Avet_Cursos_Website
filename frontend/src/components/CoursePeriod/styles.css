@@ -1,0 +1,47 @@
+div#coursePeriodContainer {
+  background: #096439;
+  width: 405px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#coursePeriodContainer div#periodLabel {
+  background: #096439;
+  color: #FFFFFF;
+  width: 120px;
+  text-align: center;
+  margin-bottom: -10px;
+  z-index: 1;
+}
+
+div#coursePeriodContainer div#coursePeriodInfo {
+  border: 2px solid #86B144;
+  padding: 20px 10px 30px 10px;
+}
+
+div#coursePeriodContainer div#coursePeriodInfo td {
+  text-align: center;
+}
+
+div#coursePeriodContainer div#coursePeriodInfo td#periodInfoHeader {
+  color: #FFFFFF;
+}
+
+div#coursePeriodContainer div#coursePeriodInfo td#periodInfoBody {
+  color: #86B144;
+  font-size: 14px;
+}
+
+div#coursePeriodContainer div#gradeCurricularLabel {
+  background: #86B144;
+  color: #FFFFFF;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-top: -15px;
+  padding: 0 30px;
+}
