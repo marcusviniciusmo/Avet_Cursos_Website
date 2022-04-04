@@ -1,3 +1,7 @@
+div#cursosContainer {
+  background: #096439;
+}
+
 div#courseCards {
   display: flex;
   flex-direction: row;
@@ -20,4 +24,24 @@ div#includedCourseCardsContainer span#includedInCourseLabel {
   width: 180px;
   margin-right: 38px;
   text-align: right;
+}
+
+span#courseNotifications {
+  color: #80AC43;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#btnMatriculeSeJa {
+  color: #096439;
+  font-size: 30px;
+  width: 417px;
+  height: 102px;
+  border-radius: 70px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

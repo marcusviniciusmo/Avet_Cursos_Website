@@ -1,4 +1,5 @@
 import { ToUpperCaseText } from "utils/Functions";
+import { Button } from "react-bootstrap";
 import Header from "components/Header";
 import CourseCard from "components/CourseCard";
 import LogoAuxVeterinario from 'assets/img/cursos/auxiliarVet.png';
@@ -39,66 +40,62 @@ function Cursos() {
   }]
 
   return (
-    <>
-      <h1>VIEW</h1>
-      <h1>Avet - Página Cursos</h1>
-
+    <section>
       <Header />
+      <div id="cursosContainer">
+        <div id="courseCards">
+          {
+            courses.map((course) => {
+              return (
+                <CourseCard
+                  imageUrl={course.imageUrl}
+                  imageDescription={course.imageDescription}
+                  courseTitle={course.courseTitle}
+                  durationInfoHeader={course.durationInfoHeader}
+                  durationInfoBody={course.durationInfoBody}
+                  periodInfoHeader={course.periodInfoHeader}
+                  periodInfoBody={course.periodInfoBody}
+                  borderRight={course.borderRight}
+                />
+              )
+            })
+          }
+        </div>
 
-      <h1>BODY</h1>
-      <div id="courseCards">
-        {
-          courses.map((course) => {
-            return (
-              <CourseCard
-                imageUrl={course.imageUrl}
-                imageDescription={course.imageDescription}
-                courseTitle={course.courseTitle}
-                durationInfoHeader={course.durationInfoHeader}
-                durationInfoBody={course.durationInfoBody}
-                periodInfoHeader={course.periodInfoHeader}
-                periodInfoBody={course.periodInfoBody}
-                borderRight={course.borderRight}
-              />
-            )
-          })
-        }
-      </div>
+        <div id="includedCourseCardsContainer">
+          <span id="includedInCourseLabel">
+            {ToUpperCaseText('Incluso em todos os cursos')}
+          </span>
+          <IncludedInCourse
+            imageUrl={ApostilaLogo}
+            imageDescription="Avet Curso - Apostila logo"
+            label="Apostila"
+          />
 
+          <IncludedInCourse
+            imageUrl={CertificadoLogo}
+            imageDescription="Avet Curso - Certificado logo"
+            label="Certificado"
+          />
 
-      <div id="includedCourseCardsContainer">
-        <span id="includedInCourseLabel">
-          {ToUpperCaseText('Incluso em todos os cursos')}
+          <IncludedInCourse
+            imageUrl={EstetoscopioLogo}
+            imageDescription="Avet Curso - Estetoscópio logo"
+            label="Jaleco e Estetoscópio"
+          />
+        </div>
+
+        <span id="courseNotifications">
+          * Uma aula na semana, contendo a parte teórica e prática. ** Aprendizado
+          na prática com atendimentos reais.
         </span>
-        <IncludedInCourse
-          imageUrl={ApostilaLogo}
-          imageDescription="Avet Curso - Apostila logo"
-          label="Apostila"
-        />
 
-        <IncludedInCourse
-          imageUrl={CertificadoLogo}
-          imageDescription="Avet Curso - Certificado logo"
-          label="Certificado"
-        />
-
-        <IncludedInCourse
-          imageUrl={EstetoscopioLogo}
-          imageDescription="Avet Curso - Estetoscópio logo"
-          label="Jaleco e Estetoscópio"
-        />
+        <Button variant="light" id="btnMatriculeSeJa" >
+          {ToUpperCaseText('Matricule-se Já')}
+        </Button>
+        <Footer />
       </div>
-
-      <h6>
-        * Uma aula na semana, contendo a parte teórica e prática. ** Aprendizado
-        na prática com atendimentos reais.
-      </h6>
-
-      <h3>AQUI VAI UM BOTÃO</h3>
-      <h4>Matricule-se Já</h4>
-
-      <Footer />
-    </>
+    </section>
   );
 };
 
