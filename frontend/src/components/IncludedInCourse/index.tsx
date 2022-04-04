@@ -1,3 +1,5 @@
+import './styles.css';
+
 type Props = {
   imageUrl: string,
   imageDescription: string,
@@ -7,7 +9,9 @@ type Props = {
 function IncludedInCourse({ imageUrl, imageDescription, label }: Props) {
   return (
     <>
-      <img src={imageUrl} alt={imageDescription} />
+      <div id='includedInCourseLogoContainer'>
+        <img src={imageUrl} alt={imageDescription} />
+      </div>
       <span>{label}</span>
     </>
   );

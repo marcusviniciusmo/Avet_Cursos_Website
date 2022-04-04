@@ -4,6 +4,9 @@ import LogoAuxVeterinario from 'assets/img/cursos/auxiliarVet.png';
 import LogoAuxSilvestres from 'assets/img/cursos/auxSilvestre.png';
 import LogoAuxInstrument from 'assets/img/cursos/auxInstrument.png';
 import IncludedInCourse from "components/IncludedInCourse";
+import ApostilaLogo from 'assets/img/cursos/apostilaLogo.png';
+import CertificadoLogo from 'assets/img/cursos/certificadoLogo.png';
+import EstetoscopioLogo from 'assets/img/cursos/estetoscopioLogo.png';
 import Footer from "components/Footer";
 import './styles.css';
 
@@ -64,19 +67,19 @@ function Cursos() {
       <h4>Incluso em todos os cursos</h4>
 
       <IncludedInCourse
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={ApostilaLogo}
         imageDescription="Avet Curso - Apostila logo"
         label="Apostila"
       />
 
       <IncludedInCourse
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={CertificadoLogo}
         imageDescription="Avet Curso - Certificado logo"
         label="Certificado"
       />
 
       <IncludedInCourse
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={EstetoscopioLogo}
         imageDescription="Avet Curso - Estetoscópio logo"
         label="Jaleco e Estetoscópio"
       />
