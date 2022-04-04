@@ -37,7 +37,21 @@ function Cursos() {
     durationInfoBody: 'Duração de 6 Meses',
     periodInfoHeader: 'Manhã,Tarde,Noite',
     periodInfoBody: '08h às 12h,13:30 às 17:30,18:30 às 22:30'
-  }]
+  }];
+
+  const includedInCourse = [{
+    imageUrl: `${ApostilaLogo}`,
+    imageDescription: 'Avet Curso - Apostila logo',
+    label: 'Apostila'
+  }, {
+    imageUrl: `${CertificadoLogo}`,
+    imageDescription: 'Avet Curso - Certificado logo',
+    label: 'Certificado'
+  }, {
+    imageUrl: `${EstetoscopioLogo}`,
+    imageDescription: 'Avet Curso - Estetoscopio logo',
+    label: 'Jaleco e Estetoscopio'
+  }];
 
   return (
     <section>
@@ -66,23 +80,17 @@ function Cursos() {
           <span id="includedInCourseLabel">
             {ToUpperCaseText('Incluso em todos os cursos')}
           </span>
-          <IncludedInCourse
-            imageUrl={ApostilaLogo}
-            imageDescription="Avet Curso - Apostila logo"
-            label="Apostila"
-          />
-
-          <IncludedInCourse
-            imageUrl={CertificadoLogo}
-            imageDescription="Avet Curso - Certificado logo"
-            label="Certificado"
-          />
-
-          <IncludedInCourse
-            imageUrl={EstetoscopioLogo}
-            imageDescription="Avet Curso - Estetoscópio logo"
-            label="Jaleco e Estetoscópio"
-          />
+          {
+            includedInCourse.map((included) => {
+              return (
+                <IncludedInCourse
+                  imageUrl={included.imageUrl}
+                  imageDescription={included.imageDescription}
+                  label={included.label}
+                />
+              )
+            })
+          }
         </div>
 
         <span id="courseNotifications">
