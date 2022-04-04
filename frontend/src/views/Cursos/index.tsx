@@ -1,3 +1,4 @@
+import { ToUpperCaseText } from "utils/Functions";
 import Header from "components/Header";
 import CourseCard from "components/CourseCard";
 import LogoAuxVeterinario from 'assets/img/cursos/auxiliarVet.png';
@@ -64,25 +65,29 @@ function Cursos() {
         }
       </div>
 
-      <h4>Incluso em todos os cursos</h4>
 
-      <IncludedInCourse
-        imageUrl={ApostilaLogo}
-        imageDescription="Avet Curso - Apostila logo"
-        label="Apostila"
-      />
+      <div id="includedCourseCardsContainer">
+        <span id="includedInCourseLabel">
+          {ToUpperCaseText('Incluso em todos os cursos')}
+        </span>
+        <IncludedInCourse
+          imageUrl={ApostilaLogo}
+          imageDescription="Avet Curso - Apostila logo"
+          label="Apostila"
+        />
 
-      <IncludedInCourse
-        imageUrl={CertificadoLogo}
-        imageDescription="Avet Curso - Certificado logo"
-        label="Certificado"
-      />
+        <IncludedInCourse
+          imageUrl={CertificadoLogo}
+          imageDescription="Avet Curso - Certificado logo"
+          label="Certificado"
+        />
 
-      <IncludedInCourse
-        imageUrl={EstetoscopioLogo}
-        imageDescription="Avet Curso - Estetoscópio logo"
-        label="Jaleco e Estetoscópio"
-      />
+        <IncludedInCourse
+          imageUrl={EstetoscopioLogo}
+          imageDescription="Avet Curso - Estetoscópio logo"
+          label="Jaleco e Estetoscópio"
+        />
+      </div>
 
       <h6>
         * Uma aula na semana, contendo a parte teórica e prática. ** Aprendizado
