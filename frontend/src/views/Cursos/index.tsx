@@ -98,7 +98,11 @@ function Cursos() {
           na prática com atendimentos reais.
         </span>
 
-        <Button variant="light" id="btnMatriculeSeJa" >
+        <Button
+          variant="light"
+          id="btnMatriculeSeJa"
+          href="/inscricaoOnline"
+        >
           {ToUpperCaseText('Matricule-se Já')}
         </Button>
         <Footer />
