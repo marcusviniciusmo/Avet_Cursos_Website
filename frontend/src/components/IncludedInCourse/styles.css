@@ -1,8 +1,22 @@
+div#includedInCourseContainer {
+  background: #86B144;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 div#includedInCourseLogoContainer {
   background: #096439;
   width: 100px;
   height: 100px;
+  margin-right: 38px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
+}
+
+div#includedInCourseContainer span {
+  color: #FFFFFF;
+  font-size: 20px;
 }
