@@ -3,6 +3,7 @@ import CourseCard from "components/CourseCard";
 import LogoAuxVeterinario from 'assets/img/cursos/auxiliarVet.png';
 import LogoAuxSilvestres from 'assets/img/cursos/auxSilvestre.png';
 import LogoAuxInstrument from 'assets/img/cursos/auxInstrument.png';
+import IncludedInCourse from "components/IncludedInCourse";
 import Footer from "components/Footer";
 import './styles.css';
 
@@ -61,12 +62,24 @@ function Cursos() {
       </div>
 
       <h4>Incluso em todos os cursos</h4>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h4>Apostila</h4>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h4>Certificado</h4>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h4>Jaleco e Estetoscópio</h4>
+
+      <IncludedInCourse
+        imageUrl="AQUI VAI UMA IMAGEM"
+        imageDescription="Avet Curso - Apostila logo"
+        label="Apostila"
+      />
+
+      <IncludedInCourse
+        imageUrl="AQUI VAI UMA IMAGEM"
+        imageDescription="Avet Curso - Certificado logo"
+        label="Certificado"
+      />
+
+      <IncludedInCourse
+        imageUrl="AQUI VAI UMA IMAGEM"
+        imageDescription="Avet Curso - Estetoscópio logo"
+        label="Jaleco e Estetoscópio"
+      />
 
       <h6>
         * Uma aula na semana, contendo a parte teórica e prática. ** Aprendizado
