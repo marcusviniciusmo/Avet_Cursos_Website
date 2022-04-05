@@ -65,11 +65,27 @@ span#courseNotifications {
     display: flex;
     flex-wrap: wrap;
   }
+
+  div#includedCourseCardsContainer span#includedInCourseLabel {
+    font-size: 12px;
+    margin-right: 15px;
+  }
 }
 
 @media screen and (max-width: 799px) {
   div#courseCards {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  div#includedCourseCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div#includedCourseCardsContainer span#includedInCourseLabel {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
   }
 }

@@ -20,3 +20,19 @@ div#includedInCourseContainer span {
   color: #FFFFFF;
   font-size: 20px;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+  div#includedInCourseContainer span {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  div#includedInCourseLogoContainer {
+    margin-right: 5px;
+  }
+  
+  div#includedInCourseContainer span {
+    font-size: 13px;
+  }
+}
