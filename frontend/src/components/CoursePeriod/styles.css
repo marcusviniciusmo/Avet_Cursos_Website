@@ -45,3 +45,9 @@ div#coursePeriodContainer div#gradeCurricularLabel {
   margin-top: -15px;
   padding: 0 30px;
 }
+
+@media screen and (max-width: 799px) {
+  div#coursePeriodContainer {
+    width: 100%;
+  }
+}

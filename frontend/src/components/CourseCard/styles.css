@@ -2,7 +2,7 @@ div#courseCardContainer {
   background: #096439;
   width: 435px;
   height: 531px;
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
 }
 
 div#courseCardLogoContainer {
@@ -24,4 +24,80 @@ div#courseCardContainer span#courseCardTitle {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (min-width: 1920px) {
+  div#courseCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
+  div#courseCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1679px) {
+  div#courseCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+  div#courseCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1439px) {
+  div#courseCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1399px) {
+  div#courseCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1365px) {
+  div#courseCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1359px) {
+  div#courseCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1152px) and (max-width: 1279px) {
+  div#courseCardContainer {
+    width: 50%;
+    border-right: none !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+  div#courseCardContainer {
+    width: 50%;
+    border-right: none !important;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  div#courseCardContainer {
+    width: 50%;
+    border-right: none !important;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  div#courseCardContainer {
+    width: 100%;
+    border-right: none !important;
+  }
 }
