@@ -1,5 +1,9 @@
 import Header from "components/Header";
 import AppointmentCard from "components/AppointmentCard/indes";
+import CustoReduzidoLogo from 'assets/img/consultas/custoReduzido.png';
+import ConsultaParticularLogo from 'assets/img/consultas/consultaParticular.png';
+import HospitalEscolaLogo from 'assets/img/consultas/hospitalEscola.png';
+import ProfissionaisEspecializadosLogo from 'assets/img/consultas/profissionaisEspecializados.png';
 import Footer from "components/Footer";
 
 function Consultas() {
@@ -12,24 +16,24 @@ function Consultas() {
 
       <h1>BODY</h1>
       <AppointmentCard
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={CustoReduzidoLogo}
         imageDescription="Custo Reduzido logo"
         label="Custo Reduzido"
       />
       <AppointmentCard
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={ConsultaParticularLogo}
         imageDescription="Consulta Particular logo"
         label="Consulta Particular"
       />
 
       <AppointmentCard
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={HospitalEscolaLogo}
         imageDescription="Hospital Escola logo"
         label="Hospital Escola"
       />
 
       <AppointmentCard
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={ProfissionaisEspecializadosLogo}
         imageDescription="Profissionais Especializados logo"
         label="Profissionais Especializados"
       />
