@@ -1,4 +1,5 @@
 import Header from "components/Header";
+import AppointmentCard from "components/AppointmentCard/indes";
 import Footer from "components/Footer";
 
 function Consultas() {
@@ -10,14 +11,28 @@ function Consultas() {
       <Header />
 
       <h1>BODY</h1>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h4>Custo Reduzido</h4>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h4>Consulta Particular</h4>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h4>Hospital Escola</h4>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h4>Profissionais Especializados</h4>
+      <AppointmentCard
+        imageUrl="AQUI VAI UMA IMAGEM"
+        imageDescription="Custo Reduzido logo"
+        label="Custo Reduzido"
+      />
+      <AppointmentCard
+        imageUrl="AQUI VAI UMA IMAGEM"
+        imageDescription="Consulta Particular logo"
+        label="Consulta Particular"
+      />
+
+      <AppointmentCard
+        imageUrl="AQUI VAI UMA IMAGEM"
+        imageDescription="Hospital Escola logo"
+        label="Hospital Escola"
+      />
+
+      <AppointmentCard
+        imageUrl="AQUI VAI UMA IMAGEM"
+        imageDescription="Profissionais Especializados logo"
+        label="Profissionais Especializados"
+      />
 
       <h5>Hemograma</h5>
       <h5>Raio-X</h5>
