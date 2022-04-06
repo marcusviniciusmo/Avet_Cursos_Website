@@ -8,6 +8,28 @@ import Footer from "components/Footer";
 import './styles.css';
 
 function Consultas() {
+  const appointments = [
+    {
+      imageUrl: `${CustoReduzidoLogo}`,
+      imageDescription: 'Custo Reduzido logo',
+      label: 'Custo Reduzido'
+    },
+    {
+      imageUrl: `${ConsultaParticularLogo}`,
+      imageDescription: 'Consulta Particular logo',
+      label: 'Consulta Particular'
+    },
+    {
+      imageUrl: `${HospitalEscolaLogo}`,
+      imageDescription: 'Hospital Escola logo',
+      label: 'Hospital Escola'
+    },
+    {
+      imageUrl: `${ProfissionaisEspecializadosLogo}`,
+      imageDescription: 'Profissionais Especializados logo',
+      label: 'Profissionais Especializados'
+    }];
+
   return (
     <>
       <h1>VIEW</h1>
@@ -17,28 +39,17 @@ function Consultas() {
 
       <h1>BODY</h1>
       <div id="appointmentCardsContainer">
-        <AppointmentCard
-          imageUrl={CustoReduzidoLogo}
-          imageDescription="Custo Reduzido logo"
-          label="Custo Reduzido"
-        />
-        <AppointmentCard
-          imageUrl={ConsultaParticularLogo}
-          imageDescription="Consulta Particular logo"
-          label="Consulta Particular"
-        />
-
-        <AppointmentCard
-          imageUrl={HospitalEscolaLogo}
-          imageDescription="Hospital Escola logo"
-          label="Hospital Escola"
-        />
-
-        <AppointmentCard
-          imageUrl={ProfissionaisEspecializadosLogo}
-          imageDescription="Profissionais Especializados logo"
-          label="Profissionais Especializados"
-        />
+        {
+          appointments.map((appointment) => {
+            return (
+              <AppointmentCard
+                imageUrl={appointment.imageUrl}
+                imageDescription={appointment.imageDescription}
+                label={appointment.label}
+              />
+            )
+          })
+        }
       </div>
 
       <h5>Hemograma</h5>
