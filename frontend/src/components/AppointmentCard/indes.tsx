@@ -1,3 +1,4 @@
+import { ToUpperCaseText } from 'utils/Functions';
 import './styles.css';
 
 type Props = {
@@ -8,12 +9,12 @@ type Props = {
 
 function AppointmentCard({ imageUrl, imageDescription, label }: Props) {
   return (
-    <>
+    <div id='appointmentCardContainer'>
       <div id="appointmentCardLogoContainer">
         <img src={imageUrl} alt={imageDescription} />
       </div>
-      <span>{label}</span>
-    </>
+      <span>{ToUpperCaseText(label)}</span>
+    </div>
   );
 };
 
