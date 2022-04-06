@@ -40,6 +40,12 @@ div#serviceListingsContainer {
     flex-wrap: wrap;
     margin-top: 50px;
   }
+
+  #btnAgendeUmaConsulta {
+    font-size: 25px;
+    width: 480px;
+    height: 80px;
+  }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -48,6 +54,12 @@ div#serviceListingsContainer {
     flex-wrap: wrap;
     margin-top: 50px;
   }
+
+  #btnAgendeUmaConsulta {
+    font-size: 20px;
+    width: 370px;
+    height: 70px;
+  }
 }
 
 @media screen and (max-width: 799px) {
@@ -55,5 +67,11 @@ div#serviceListingsContainer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+  }
+
+  #btnAgendeUmaConsulta {
+    font-size: 18px;
+    width: 60%;
+    height: 70px;
   }
 }
