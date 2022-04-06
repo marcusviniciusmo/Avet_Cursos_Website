@@ -1,4 +1,11 @@
-li {
+li#btnHome,
+li#btnCursos,
+li#btnConsultas,
+li#btnAAvet,
+li#btnBlog,
+li#btnFaleConosco,
+li#btnInscricaoOnline,
+li#btnAgendarConsultaOnline {
   color: #FFFFFF;
   height: 41px;
   border-radius: 20px;
