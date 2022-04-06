@@ -19,3 +19,29 @@ div#serviceListingCirurgias li {
   width: 70%;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1920px) {
+  div#serviceListingExames li,
+  div#serviceListingCirurgias li {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  div#serviceListingExames li,
+  div#serviceListingCirurgias li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  div#serviceListingExames,
+  div#serviceListingCirurgias {
+    padding: 90px 0 130px 10px;
+  }
+
+  div#serviceListingExames li,
+  div#serviceListingCirurgias li {
+    font-size: 12px;
+  }
+}
