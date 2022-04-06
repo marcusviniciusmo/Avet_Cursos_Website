@@ -1,3 +1,5 @@
+import { Button } from "react-bootstrap";
+import { ToUpperCaseText } from "utils/Functions";
 import Header from "components/Header";
 import AppointmentCard from "components/AppointmentCard/indes";
 import CustoReduzidoLogo from 'assets/img/consultas/custoReduzido.png';
@@ -32,13 +34,9 @@ function Consultas() {
     }];
 
   return (
-    <>
-      <h1>VIEW</h1>
-      <h1>Avet - Página Consultas</h1>
-
+    <section>
       <Header />
 
-      <h1>BODY</h1>
       <div id="appointmentCardsContainer">
         {
           appointments.map((appointment) => {
@@ -67,11 +65,12 @@ function Consultas() {
         />
       </div>
 
-      <h3>AQUI VAI UM BOTÃO</h3>
-      <h4>Agende já uma consulta</h4>
+      <Button id="btnAgendeUmaConsulta">
+        {ToUpperCaseText('Agende já uma consulta')}
+      </Button>
 
       <Footer />
-    </>
+    </section>
   );
 };
 

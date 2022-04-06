@@ -10,3 +10,18 @@ div#serviceListingsContainer {
   display: flex;
   flex-direction: row;
 }
+
+#btnAgendeUmaConsulta {
+  background: #86bB44;
+  color: #FFFFFF;
+  font-size: 30px;
+  border: none;
+  width: 615px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 35px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
