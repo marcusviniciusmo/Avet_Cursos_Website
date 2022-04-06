@@ -65,7 +65,10 @@ function Consultas() {
         />
       </div>
 
-      <Button id="btnAgendeUmaConsulta">
+      <Button
+        id="btnAgendeUmaConsulta"
+        href="/agendarConsultaOnline"
+      >
         {ToUpperCaseText('Agende já uma consulta')}
       </Button>
 
