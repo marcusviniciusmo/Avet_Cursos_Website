@@ -5,3 +5,8 @@ div#appointmentCardsContainer {
   flex-direction: row;
   justify-content: center;
 }
+
+div#serviceListingsContainer {
+  display: flex;
+  flex-direction: row;
+}

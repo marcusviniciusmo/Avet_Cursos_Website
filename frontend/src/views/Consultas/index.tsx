@@ -53,17 +53,19 @@ function Consultas() {
         }
       </div>
 
-      <ServiceListing
-        id="serviceListingExames"
-        serviceList="Hemograma,Raio-X,Exame Loren Ipsum,
-          Exame Loren Ipsum,Exame Loren Ipsum"
-      />
+      <div id="serviceListingsContainer">
+        <ServiceListing
+          id="serviceListingExames"
+          serviceList="Hemograma,Raio-X,Exame Loren Ipsum,
+            Exame Loren Ipsum,Exame Loren Ipsum"
+        />
 
-      <ServiceListing
-        id="serviceListingCirurgias"
-        serviceList="Castração,Cirurgia Loren Ipsum,Cirurgia Loren Ipsum,
-          Cirurgia Loren Ipsum,Cirurgia Loren Ipsum"
-      />
+        <ServiceListing
+          id="serviceListingCirurgias"
+          serviceList="Castração,Cirurgia Loren Ipsum,Cirurgia Loren Ipsum,
+            Cirurgia Loren Ipsum,Cirurgia Loren Ipsum"
+        />
+      </div>
 
       <h3>AQUI VAI UM BOTÃO</h3>
       <h4>Agende já uma consulta</h4>
