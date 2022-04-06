@@ -1,0 +1,17 @@
+div#aavetAreaAbout {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div#aavetAreaAbout span {
+  width: 50%;
+  font-size: 16px;
+  color: #096439;
+  text-align: justify;
+  border-left: 2px solid #86B144;
+  padding-left: 40px;
+  margin-left: 40px;
+}
