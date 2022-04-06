@@ -1,0 +1,21 @@
+div#serviceListingExames {
+  background: #096439;
+}
+
+div#serviceListingCirurgias {
+  background: #86B144;
+}
+
+div#serviceListingExames,
+div#serviceListingCirurgias {
+  width: 50%;
+  color: #FFFFFF;
+  padding: 90px 0 130px 100px;
+}
+
+div#serviceListingExames li,
+div#serviceListingCirurgias li {
+  font-size: 22px;
+  width: 70%;
+  cursor: pointer;
+}
