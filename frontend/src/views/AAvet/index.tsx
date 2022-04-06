@@ -1,4 +1,5 @@
 import Header from "components/Header";
+import AvetCursosLogo from 'assets/img/aavet/avetLogo.png';
 import Footer from "components/Footer";
 
 function AAvet() {
@@ -10,7 +11,8 @@ function AAvet() {
       <Header />
 
       <h1>BODY</h1>
-      <h3>AQUI VAI UMA IMAGEM</h3>
+      <img src={AvetCursosLogo} alt="Avet Cursos logo" />
+
       <h5>
         A Avet Cursos detectou essa necessidade e por isso oferece o curso de
         Auxiliar Veterinário e estágios supervisionados para os apaixonados por
