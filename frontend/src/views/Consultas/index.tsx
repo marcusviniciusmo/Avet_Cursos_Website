@@ -4,6 +4,7 @@ import CustoReduzidoLogo from 'assets/img/consultas/custoReduzido.png';
 import ConsultaParticularLogo from 'assets/img/consultas/consultaParticular.png';
 import HospitalEscolaLogo from 'assets/img/consultas/hospitalEscola.png';
 import ProfissionaisEspecializadosLogo from 'assets/img/consultas/profissionaisEspecializados.png';
+import ServiceListing from "components/ServiceListing";
 import Footer from "components/Footer";
 import './styles.css';
 
@@ -52,17 +53,17 @@ function Consultas() {
         }
       </div>
 
-      <h5>Hemograma</h5>
-      <h5>Raio-X</h5>
-      <h5>Exame Loren Ipsum</h5>
-      <h5>Exame Loren Ipsum</h5>
-      <h5>Exame Loren Ipsum</h5>
+      <ServiceListing
+        id="serviceListingExames"
+        serviceList="Hemograma,Raio-X,Exame Loren Ipsum,
+          Exame Loren Ipsum,Exame Loren Ipsum"
+      />
 
-      <h5>Castração</h5>
-      <h5>Cirurgia Loren Ipsum</h5>
-      <h5>Cirurgia Loren Ipsum</h5>
-      <h5>Cirurgia Loren Ipsum</h5>
-      <h5>Cirurgia Loren Ipsum</h5>
+      <ServiceListing
+        id="serviceListingCirurgias"
+        serviceList="Castração,Cirurgia Loren Ipsum,Cirurgia Loren Ipsum,
+          Cirurgia Loren Ipsum,Cirurgia Loren Ipsum"
+      />
 
       <h3>AQUI VAI UM BOTÃO</h3>
       <h4>Agende já uma consulta</h4>
