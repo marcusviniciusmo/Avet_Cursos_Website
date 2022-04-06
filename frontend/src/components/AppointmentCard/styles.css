@@ -20,3 +20,45 @@ div#appointmentCardContainer span {
   width: 270px;
   text-align: center;
 }
+
+@media screen and (min-width: 1920px) {
+  div#appointmentCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
+  div#appointmentCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1679px) {
+  div#appointmentCardContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1152px) and (max-width: 1279px) {
+  div#appointmentCardContainer {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+  div#appointmentCardContainer {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  div#appointmentCardContainer {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  div#appointmentCardContainer {
+    margin-top: 30px;
+  }
+}
