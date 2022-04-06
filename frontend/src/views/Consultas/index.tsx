@@ -5,6 +5,7 @@ import ConsultaParticularLogo from 'assets/img/consultas/consultaParticular.png'
 import HospitalEscolaLogo from 'assets/img/consultas/hospitalEscola.png';
 import ProfissionaisEspecializadosLogo from 'assets/img/consultas/profissionaisEspecializados.png';
 import Footer from "components/Footer";
+import './styles.css';
 
 function Consultas() {
   return (
@@ -15,28 +16,30 @@ function Consultas() {
       <Header />
 
       <h1>BODY</h1>
-      <AppointmentCard
-        imageUrl={CustoReduzidoLogo}
-        imageDescription="Custo Reduzido logo"
-        label="Custo Reduzido"
-      />
-      <AppointmentCard
-        imageUrl={ConsultaParticularLogo}
-        imageDescription="Consulta Particular logo"
-        label="Consulta Particular"
-      />
+      <div id="appointmentCardsContainer">
+        <AppointmentCard
+          imageUrl={CustoReduzidoLogo}
+          imageDescription="Custo Reduzido logo"
+          label="Custo Reduzido"
+        />
+        <AppointmentCard
+          imageUrl={ConsultaParticularLogo}
+          imageDescription="Consulta Particular logo"
+          label="Consulta Particular"
+        />
 
-      <AppointmentCard
-        imageUrl={HospitalEscolaLogo}
-        imageDescription="Hospital Escola logo"
-        label="Hospital Escola"
-      />
+        <AppointmentCard
+          imageUrl={HospitalEscolaLogo}
+          imageDescription="Hospital Escola logo"
+          label="Hospital Escola"
+        />
 
-      <AppointmentCard
-        imageUrl={ProfissionaisEspecializadosLogo}
-        imageDescription="Profissionais Especializados logo"
-        label="Profissionais Especializados"
-      />
+        <AppointmentCard
+          imageUrl={ProfissionaisEspecializadosLogo}
+          imageDescription="Profissionais Especializados logo"
+          label="Profissionais Especializados"
+        />
+      </div>
 
       <h5>Hemograma</h5>
       <h5>Raio-X</h5>
