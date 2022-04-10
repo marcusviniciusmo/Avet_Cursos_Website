@@ -1,5 +1,6 @@
 import Header from "components/Header";
 import AvetCursosLogo from 'assets/img/aavet/avetLogo.png';
+import PhotoGallery from "components/PhotoGallery";
 import Footer from "components/Footer";
 import './styles.css';
 
@@ -30,18 +31,8 @@ function AAvet() {
       </div>
 
       <h2>GALERIA</h2>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
-      <h3>AQUI VAI UMA IMAGEM</h3>
+
+      <PhotoGallery />
 
       <Footer />
     </>
