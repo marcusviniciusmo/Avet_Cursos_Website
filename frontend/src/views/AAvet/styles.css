@@ -1,5 +1,9 @@
+div#aavetContainer {
+  background: #E2E4E7;
+}
+
 div#aavetAreaAbout {
-  margin-top: 100px;
+  padding-top: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
