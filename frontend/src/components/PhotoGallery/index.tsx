@@ -76,21 +76,19 @@ function PhotoGallery() {
     }];
 
   return (
-    <>
-      <div id='photoGalleryContainer'>
-        <ul id='photoGalleryList'>
-          {
-            pictures.map((picture) => {
-              return (
-                <li id={picture.id}>
-                  <span>{picture.imageDescription}</span>
-                </li>
-              )
-            })
-          }
-        </ul>
-      </div>
-    </>
+    <div id='photoGalleryContainer'>
+      <ul id='photoGalleryList'>
+        {
+          pictures.map((picture) => {
+            return (
+              <li id={picture.id}>
+                <span>{picture.imageDescription}</span>
+              </li>
+            )
+          })
+        }
+      </ul>
+    </div>
   );
 };
 
