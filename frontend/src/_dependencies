@@ -16,3 +16,7 @@ yarn add @fortawesome/react-fontawesome@latest
 // Bootstrap
 yarn add react-bootstrap
 yarn add bootstrap
+
+// Material UI Icons
+yarn add @mui/icons-material
+yarn add @mui/material @emotion/react @emotion/styled
