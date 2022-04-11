@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import CloseIcon from '@mui/icons-material/Close';
 import Photo01 from 'assets/img/photoGallery/photo01.png';
 import Photo02 from 'assets/img/photoGallery/photo02.png';
 import Photo03 from 'assets/img/photoGallery/photo03.png';
@@ -13,6 +15,9 @@ import Photo12 from 'assets/img/photoGallery/photo12.png';
 import './styles.css';
 
 function PhotoGallery() {
+  const [model, setModel] = useState(false);
+  const [tempImageSrc, setTempImageSrc] = useState('');
+
   const pictures = [
     {
       id: 'photo01',
@@ -75,13 +80,25 @@ function PhotoGallery() {
       imageDescription: 'Galeria Avet - Foto 12'
     }];
 
+  const getImage = (imageSrc: string) => {
+    setTempImageSrc(imageSrc);
+    setModel(true);
+  };
+
   return (
     <div id='photoGalleryContainer'>
+      <div className={model ? 'model open' : 'model'}>
+        <img src={tempImageSrc} alt="Galeria Avet Cursos" />
+        <CloseIcon onClick={() => setModel(false)} />
+      </div>
       <ul id='photoGalleryList'>
         {
           pictures.map((picture) => {
             return (
-              <li id={picture.id}>
+              <li
+                id={picture.id}
+                onClick={() => getImage(picture.imageUrl)}
+              >
                 <span>{picture.imageDescription}</span>
               </li>
             )
@@ -89,6 +106,7 @@ function PhotoGallery() {
         }
       </ul>
     </div>
+
   );
 };
 
