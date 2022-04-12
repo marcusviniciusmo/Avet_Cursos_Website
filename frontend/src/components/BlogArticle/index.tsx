@@ -1,3 +1,5 @@
+import './styles.css';
+
 type Props = {
   imageUrl: string,
   imageDescription: string,
@@ -13,7 +15,9 @@ function BlogArticle({
 }: Props) {
   return (
     <>
-      <img src={imageUrl} alt={imageDescription} />
+      <div id="blogArticleLogoContainer">
+        <img src={imageUrl} alt={imageDescription} />
+      </div>
       <h4>{articleTitle}</h4>
       <h5>{articleText}</h5>
       <h3>AQUI VAI UM BOTÃO</h3>

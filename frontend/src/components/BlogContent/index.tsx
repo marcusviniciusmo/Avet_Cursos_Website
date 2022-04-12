@@ -1,10 +1,14 @@
 import BlogArticle from "components/BlogArticle";
+import FotoMateria2022 from 'assets/img/blog/fotoMateria2022.png';
+import FotoMateria2021 from 'assets/img/blog/fotoMateria2021.png';
+import FotoMateria2020 from 'assets/img/blog/fotoMateria2020.png';
+import FotoMateria2019 from 'assets/img/blog/fotoMateria2019.png';
 
 function BlogContent() {
   return (
     <>
       <BlogArticle
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={FotoMateria2022}
         imageDescription="Avet Cursos - logo do artigo"
         articleTitle="Sucesso na Carreira: 5 dicas para auxiliar veterinários em 2022"
         articleText={`Lorem ipsum varius neque et nibh euismod amet lorem
@@ -15,7 +19,7 @@ function BlogContent() {
       />
 
       <BlogArticle
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={FotoMateria2021}
         imageDescription="Avet Cursos - logo do artigo"
         articleTitle="Sucesso na Carreira: 5 dicas para auxiliar veterinários em 2021"
         articleText={`Lorem ipsum varius neque et nibh euismod amet lorem
@@ -26,7 +30,7 @@ function BlogContent() {
       />
 
       <BlogArticle
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={FotoMateria2020}
         imageDescription="Avet Cursos - logo do artigo"
         articleTitle="Sucesso na Carreira: 5 dicas para auxiliar veterinários em 2020"
         articleText={`Lorem ipsum varius neque et nibh euismod amet lorem
@@ -37,7 +41,7 @@ function BlogContent() {
       />
 
       <BlogArticle
-        imageUrl="AQUI VAI UMA IMAGEM"
+        imageUrl={FotoMateria2019}
         imageDescription="Avet Cursos - logo do artigo"
         articleTitle="Sucesso na Carreira: 5 dicas para auxiliar veterinários em 2019"
         articleText={`Lorem ipsum varius neque et nibh euismod amet lorem
