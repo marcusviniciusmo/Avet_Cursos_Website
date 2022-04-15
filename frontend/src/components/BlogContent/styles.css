@@ -1,0 +1,6 @@
+div#blogArticlesContainer {
+  background: #86B144;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
