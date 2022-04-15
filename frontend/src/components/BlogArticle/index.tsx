@@ -1,3 +1,4 @@
+import { ToUpperCaseText } from 'utils/Functions';
 import './styles.css';
 
 type Props = {
@@ -14,15 +15,22 @@ function BlogArticle({
   articleText
 }: Props) {
   return (
-    <>
+    <div id='blogArticleContainer'>
       <div id="blogArticleLogoContainer">
         <img src={imageUrl} alt={imageDescription} />
       </div>
-      <h4>{articleTitle}</h4>
-      <h5>{articleText}</h5>
-      <h3>AQUI VAI UM BOTÃO</h3>
-      <h5>Ler Mais</h5>
-    </>
+      <div id='blogArticleContent'>
+        <div id='blogArticleTitle'>
+          <span>{ToUpperCaseText(articleTitle)}</span>
+        </div>
+        <div id='blogArticleText'>
+          <span>{articleText}</span>
+        </div>
+        <div id='btnLerMais'>
+          <span>{ToUpperCaseText('Ler Mais')}</span>
+        </div>
+      </div>
+    </div>
   );
 };
 

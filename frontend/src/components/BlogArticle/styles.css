@@ -1,4 +1,44 @@
+div#blogArticleContainer {
+  background: #86B144;
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto;
+}
+
 div#blogArticleLogoContainer {
   width: 274px;
   height: 274px;
+}
+
+div#blogArticleContent {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  margin: 0 10px;
+}
+
+div#blogArticleTitle {
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+div#blogArticleText {
+  color: #FFFFFF;
+  font-size: 11px;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+div#btnLerMais {
+  background: #3F6F40;
+  color: #FFFFFF;
+  width: 174px;
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  cursor: pointer;
 }
