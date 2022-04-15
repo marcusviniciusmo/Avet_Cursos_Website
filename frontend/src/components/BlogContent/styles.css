@@ -16,3 +16,24 @@ div#btnVejaMaisMaterias {
   padding: 35px 0;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
+  div#blogArticlesContainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 1679px) {
+  div#blogArticlesContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+  div#blogArticlesContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
