@@ -1,6 +1,18 @@
+div#blogContentContainer {
+  background: #86B144;
+}
+
 div#blogArticlesContainer {
   background: #86B144;
   display: flex;
   flex-wrap: wrap;
   padding-top: 20px;
+}
+
+div#btnVejaMaisMaterias {
+  color: #FFFFFF;
+  font-size: 40px;
+  text-align: center;
+  padding: 35px 0;
+  cursor: pointer;
 }
