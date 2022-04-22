@@ -1,4 +1,5 @@
 import Header from "components/Header";
+import ContactAreaHeader from "components/ContactAreaHeader";
 import Footer from "components/Footer";
 
 function FaleConosco() {
@@ -10,11 +11,11 @@ function FaleConosco() {
       <Header />
 
       <h1>BODY</h1>
-      <h4>Contato</h4>
-      <h5>
-        Entre em contato conosco. Nossa equipe de especialistas está sempre
-        pronta para te atender.
-      </h5>
+      <ContactAreaHeader
+        areaTitle="Contato"
+        areaText={`Entre em contato conosco. Nossa equipe de especialistas está
+          sempre pronta para te atender.`}
+      />
 
       <h3>AQUI VAI UMA LINHA</h3>
 
@@ -34,10 +35,12 @@ function FaleConosco() {
 
       <h3>AQUI VAI UMA LINHA</h3>
 
-      <h4>Localização</h4>
-      <h5>
-        Av. Vital Brasil, 302 Jd. Bela Vista - CEP 13076-415 - Campinas - SP
-      </h5>
+      <ContactAreaHeader
+        areaTitle="Localização"
+        areaText={`Av. Vital Brasil, 302 Jd. Bela Vista - CEP 13076-415 -
+          Campinas - SP`}
+      />
+
       <h3>AQUI VAI UM MAPA</h3>
 
       <h3>AQUI VAI UMA IMAGEM</h3>
