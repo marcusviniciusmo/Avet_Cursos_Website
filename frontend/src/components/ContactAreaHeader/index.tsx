@@ -1,3 +1,5 @@
+import './styles.css';
+
 type Props = {
   areaTitle: string,
   areaText: string
@@ -5,10 +7,12 @@ type Props = {
 
 function ContactAreaHeader({ areaTitle, areaText }: Props) {
   return (
-    <>
-      <h1>{areaTitle}</h1>
-      <h4>{areaText}</h4>
-    </>
+    <div id="contactAreaHeaderContainer">
+      <div id='contactAreaHeaderTitle'>
+        <span>{areaTitle}</span>
+      </div>
+      <span>{areaText}</span>
+    </div>
   );
 };
 
