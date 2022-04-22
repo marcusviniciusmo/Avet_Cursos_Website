@@ -1,5 +1,6 @@
 import Header from "components/Header";
 import ContactAreaHeader from "components/ContactAreaHeader";
+import ContactForm from "components/ContactForm";
 import Footer from "components/Footer";
 
 function FaleConosco() {
@@ -17,21 +18,7 @@ function FaleConosco() {
           sempre pronta para te atender.`}
       />
 
-      <h3>AQUI VAI UMA LINHA</h3>
-
-      <h3>AQUI VAI UM CAMPO</h3>
-      <h4>Nome</h4>
-      <h3>AQUI VAI UM CAMPO</h3>
-      <h4>Telefone</h4>
-      <h3>AQUI VAI UM CAMPO</h3>
-      <h4>E-mail</h4>
-      <h3>AQUI VAI UM CAMPO</h3>
-      <h4>Celular</h4>
-      <h3>AQUI VAI UM CAMPO</h3>
-      <h4>Mensagem</h4>
-
-      <h3>AQUI VAI UM BOTÃO</h3>
-      <h4>Enviar</h4>
+      <ContactForm />
 
       <h3>AQUI VAI UMA LINHA</h3>
 
