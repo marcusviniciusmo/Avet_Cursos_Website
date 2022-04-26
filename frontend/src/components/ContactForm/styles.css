@@ -1,0 +1,43 @@
+div#contactFormContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+div#contactFormContainer div#contactFormBorder {
+  border-top: 1px solid #E3E3E3;
+  margin: 10px 0;
+}
+
+div#contactFormContainer div.contactFormRow {
+  display: flex;
+  flex-direction: row;
+}
+
+div#contactFormContainer div.contactFormField {
+  width: 100%;
+  margin: 5px;
+}
+
+div#contactFormContainer div.contactFormField input,
+div#contactFormContainer div.contactFormField textarea {
+  background: #EEEEEE;
+  width: 100%;
+  padding: 2px 10px;
+  border: 1px solid #ACACAC;
+}
+
+div#contactFormContainer div.contactFormField input:hover,
+div#contactFormContainer div.contactFormField textarea:hover {
+  background: #DDDDDD;
+}
+
+div#contactFormContainer div#contactFormBtnEnviar button {
+  background: #9BC15D;
+  color: #FFFFFF;
+  font-size: 18px;
+  width: 138px;
+  height: 45px;
+  margin: 0 5px;
+  float: right;
+  border: none;
+}
