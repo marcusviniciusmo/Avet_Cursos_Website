@@ -3,3 +3,7 @@ div#faleConoscoAreaBorder {
   border: 1px solid #CECECE;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
 }
+
+div#faleConoscoContactArea {
+  background: #3F6F3F;
+}
