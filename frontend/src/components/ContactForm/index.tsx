@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ToUpperCaseText } from "utils/Functions";
+import { Toast } from "components/Toast";
 import './styles.css';
 
 function ContactForm() {
@@ -34,6 +35,21 @@ function ContactForm() {
       return false;
     else
       return true;
+  };
+
+  const submitForm = (event: any) => {
+    event.preventDefault();
+
+    if (name.length > 0 &&
+      phone.length > 0 &&
+      email.length > 0 &&
+      cellPhone.length > 0 &&
+      message.length > 0) {
+      Toast.fire({
+        icon: 'success',
+        title: 'Sua mensagem foi enviada'
+      });
+    }
   };
 
   return (
@@ -112,6 +128,7 @@ function ContactForm() {
           <button
             type="submit"
             disabled={isNullForm()}
+            onClick={submitForm}
           >
             {ToUpperCaseText('Enviar')}
           </button>
