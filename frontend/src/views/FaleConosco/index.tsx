@@ -3,6 +3,7 @@ import ContactAreaHeader from "components/ContactAreaHeader";
 import ContactForm from "components/ContactForm";
 import AvetMap from "components/AvetMap";
 import AvetLogo from 'assets/img/faleConosco/avetLogo.png';
+import ContactInfo from "components/ContactInfo";
 import Footer from "components/Footer";
 import './styles.css';
 
@@ -36,12 +37,7 @@ function FaleConosco() {
       <div id="faleConoscoContactArea">
         <img src={AvetLogo} alt="Avet Cursos - logo" />
 
-        <h3>AQUI VAI UM ÍCONE</h3>
-        <h5>(19) 3254-4083 // 99900-4489 (Whats)</h5>
-        <h3>AQUI VAI UM ÍCONE</h3>
-        <h5>contato@avetcursos.com.br</h5>
-        <h3>AQUI VAI UM ÍCONE</h3>
-        <h5>Av. Vital Brasil, 302 Jd. Bela Vista - 13076-415 - Campinas/SP</h5>
+        <ContactInfo />
 
         <h3>AQUI VAI UM BOTÃO</h3>
         <h5>Whatsapp</h5>
