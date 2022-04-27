@@ -4,6 +4,7 @@ import ContactForm from "components/ContactForm";
 import AvetMap from "components/AvetMap";
 import AvetLogo from 'assets/img/faleConosco/avetLogo.png';
 import ContactInfo from "components/ContactInfo";
+import ContactInfoButtonArea from "components/ContactInfoButtonArea";
 import Footer from "components/Footer";
 import './styles.css';
 
@@ -39,13 +40,7 @@ function FaleConosco() {
 
         <ContactInfo />
 
-        <h3>AQUI VAI UM BOTÃO</h3>
-        <h5>Whatsapp</h5>
-        <h3>AQUI VAI UM ÍCONE</h3>
-
-        <h3>AQUI VAI UM BOTÃO</h3>
-        <h5>Mensagem</h5>
-        <h3>AQUI VAI UM ÍCONE</h3>
+        <ContactInfoButtonArea />
       </div>
 
       <Footer />
