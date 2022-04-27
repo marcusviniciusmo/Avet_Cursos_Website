@@ -20,3 +20,6 @@ yarn add bootstrap
 // Material UI Icons
 yarn add @mui/icons-material
 yarn add @mui/material @emotion/react @emotion/styled
+
+// SweetAlert 2
+yarn add sweetalert2
