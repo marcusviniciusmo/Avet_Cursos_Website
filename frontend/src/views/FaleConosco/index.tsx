@@ -1,6 +1,7 @@
 import Header from "components/Header";
 import ContactAreaHeader from "components/ContactAreaHeader";
 import ContactForm from "components/ContactForm";
+import AvetMap from "components/AvetMap";
 import Footer from "components/Footer";
 import './styles.css';
 
@@ -29,7 +30,7 @@ function FaleConosco() {
           Campinas - SP`}
       />
 
-      <h3>AQUI VAI UM MAPA</h3>
+      <AvetMap />
 
       <h3>AQUI VAI UMA IMAGEM</h3>
 
