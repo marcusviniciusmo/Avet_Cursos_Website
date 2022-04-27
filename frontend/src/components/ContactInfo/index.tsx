@@ -1,19 +1,28 @@
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import AddLocationAltOutlinedIcon from '@mui/icons-material/AddLocationAltOutlined';
+import './styles.css';
 
 function ContactInfo() {
   return (
-    <>
-      <PhoneIcon />
-      <h5>(19) 3254-4083 // 99900-4489 (Whats)</h5>
+    <div id='contactInfoContainer'>
+      <div className='contactInfoRow'>
+        <PhoneIcon />
+        <span>(19) 3254-4083 // 99900-4489 (Whats)</span>
+      </div>
 
-      <MailOutlineIcon />
-      <h5>contato@avetcursos.com.br</h5>
+      <div className='contactInfoRow'>
+        <MailOutlineIcon />
+        <span>contato@avetcursos.com.br</span>
+      </div>
 
-      <AddLocationAltOutlinedIcon />
-      <h5>Av. Vital Brasil, 302 Jd. Bela Vista - 13076-415 - Campinas/SP</h5>
-    </>
+      <div className='contactInfoRow'>
+        <AddLocationAltOutlinedIcon />
+        <span>
+          Av. Vital Brasil, 302<br /> Jd. Bela Vista - 13076-415 - Campinas/SP
+        </span>
+      </div>
+    </div>
   );
 };
 

@@ -1,0 +1,19 @@
+div#contactInfoContainer {
+  color: #FFFFFF;
+  font-size: 17px;
+  width: 355px;
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#contactInfoContainer div.contactInfoRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div#contactInfoContainer div.contactInfoRow span {
+  margin: 5px 10px;
+}
