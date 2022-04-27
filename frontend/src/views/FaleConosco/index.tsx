@@ -2,6 +2,7 @@ import Header from "components/Header";
 import ContactAreaHeader from "components/ContactAreaHeader";
 import ContactForm from "components/ContactForm";
 import Footer from "components/Footer";
+import './styles.css';
 
 function FaleConosco() {
   return (
@@ -20,7 +21,7 @@ function FaleConosco() {
 
       <ContactForm />
 
-      <h3>AQUI VAI UMA LINHA</h3>
+      <div id="faleConoscoAreaBorder" />
 
       <ContactAreaHeader
         areaTitle="Localização"
