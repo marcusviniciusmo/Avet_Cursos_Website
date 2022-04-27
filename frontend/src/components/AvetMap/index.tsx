@@ -1,3 +1,5 @@
+import './styles.css';
+
 function AvetMap() {
   const avetMapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.
   9857259719547!2d-47.04849888534085!3d-22.876985685026998!2m3!1f0!2f0!3f0!
@@ -7,18 +9,15 @@ function AvetMap() {
   -BR!2sie`;
 
   return (
-    <>
+    <div id='avetMapContainer'>
       <iframe
         title="AvetMap"
         src={avetMapUrl}
-        width="600"
-        height="450"
-        style={{ border: 0 }}
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />
-    </>
+    </div>
   );
 };
 
