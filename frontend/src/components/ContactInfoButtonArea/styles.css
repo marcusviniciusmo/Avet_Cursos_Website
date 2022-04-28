@@ -39,3 +39,49 @@ div#contactInfoButtonAreaContainer div.whatsappButton:hover,
 div#contactInfoButtonAreaContainer div.mensagemButton:hover {
   font-weight: bold;
 }
+
+@media screen and (min-width: 1152px) and (max-width: 1279px) {
+  div#contactInfoButtonAreaContainer {
+    width: 45%;
+  }
+
+  div#contactInfoButtonAreaContainer div.contactButton {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+  div#contactInfoButtonAreaContainer {
+    width: 45%;
+    margin-left: 20px;
+  }
+
+  div#contactInfoButtonAreaContainer div.contactButton {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  div#contactInfoButtonAreaContainer {
+    width: 30%;
+  }
+
+  div#contactInfoButtonAreaContainer div.contactButton {
+    font-size: 13px;
+    width: 120px;
+    height: 30px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  div#contactInfoButtonAreaContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  div#contactInfoButtonAreaContainer div.contactButton {
+    width: 150px;
+    margin: 20px 30px;
+  }
+}

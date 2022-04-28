@@ -19,3 +19,18 @@ div#faleConoscoContactArea img {
   max-height: 136px;
   margin-right: 50px;
 }
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  div#faleConoscoContactArea img {
+    width: auto;
+    max-width: 151px;
+    height: auto;
+    max-height: 102px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  div#faleConoscoContactArea {
+    flex-wrap: wrap;
+  }
+}
