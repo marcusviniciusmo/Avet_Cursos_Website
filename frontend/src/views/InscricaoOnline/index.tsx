@@ -1,4 +1,5 @@
 import Header from "components/Header";
+import UnderConstruction from "components/UnderConstruction";
 import Footer from "components/Footer";
 
 function InscricaoOnline() {
@@ -10,6 +11,9 @@ function InscricaoOnline() {
       <Header />
 
       <h1>BODY</h1>
+      <UnderConstruction
+        pageTitle="Inscrição Online"
+      />
 
       <Footer />
     </>
