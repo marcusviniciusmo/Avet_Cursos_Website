@@ -10,13 +10,9 @@ import './styles.css';
 
 function FaleConosco() {
   return (
-    <>
-      <h1>VIEW</h1>
-      <h1>Avet - Página Fale Conosco</h1>
-
+    <section>
       <Header />
 
-      <h1>BODY</h1>
       <ContactAreaHeader
         areaTitle="Contato"
         areaText={`Entre em contato conosco. Nossa equipe de especialistas está
@@ -44,7 +40,7 @@ function FaleConosco() {
       </div>
 
       <Footer />
-    </>
+    </section>
   );
 };
 
