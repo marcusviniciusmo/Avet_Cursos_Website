@@ -6,4 +6,16 @@ div#faleConoscoAreaBorder {
 
 div#faleConoscoContactArea {
   background: #3F6F3F;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div#faleConoscoContactArea img {
+  width: auto;
+  max-width: 202px;
+  height: auto;
+  max-height: 136px;
+  margin-right: 50px;
 }
