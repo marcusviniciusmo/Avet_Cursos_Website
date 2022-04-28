@@ -45,3 +45,12 @@ div#underConstructionContainer span {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 799px) {
+  div#underConstructionContainer {
+    flex-wrap: wrap;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+}
