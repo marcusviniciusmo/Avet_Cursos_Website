@@ -1,0 +1,41 @@
+div#contactInfoButtonAreaContainer {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+
+div#contactInfoButtonAreaContainer div.contactButton {
+  width: 215px;
+  height: 45px;
+  margin: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+div#contactInfoButtonAreaContainer div.contactButton span {
+  margin: 0 5px;
+}
+
+div#contactInfoButtonAreaContainer div.whatsappButton {
+  background: #DCB55B;
+}
+
+div#contactInfoButtonAreaContainer div.whatsappButton:hover {
+  background: #FFB300;
+}
+
+div#contactInfoButtonAreaContainer div.mensagemButton {
+  background: #AB305A;
+}
+
+div#contactInfoButtonAreaContainer div.mensagemButton:hover {
+  background: #F80053;
+}
+
+div#contactInfoButtonAreaContainer div.whatsappButton:hover, 
+div#contactInfoButtonAreaContainer div.mensagemButton:hover {
+  font-weight: bold;
+}
