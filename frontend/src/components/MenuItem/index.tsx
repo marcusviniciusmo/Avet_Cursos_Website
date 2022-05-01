@@ -1,12 +1,8 @@
+import { IMenuItem } from 'utils/Types';
 import { ToUpperCaseText } from "utils/Functions";
 import './styles.css';
 
-type Props = {
-  textButton: string,
-  id: string
-};
-
-function MenuItem({ textButton, id }: Props) {
+function MenuItem({ textButton, id }: IMenuItem) {
   return (
     <li id={id}>
       {ToUpperCaseText(textButton)}

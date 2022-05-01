@@ -1,18 +1,8 @@
+import { ICourseCard } from 'utils/Types';
 import { ToUpperCaseText } from 'utils/Functions';
 import CourseDuration from 'components/CourseDuration';
 import CoursePeriod from 'components/CoursePeriod';
 import './styles.css';
-
-type Props = {
-  imageUrl: string,
-  imageDescription: string,
-  courseTitle: string,
-  durationInfoHeader?: string,
-  durationInfoBody: string,
-  periodInfoHeader: string,
-  periodInfoBody: string,
-  borderRight?: boolean
-};
 
 function CourseCard({
   imageUrl,
@@ -23,7 +13,7 @@ function CourseCard({
   periodInfoHeader,
   periodInfoBody,
   borderRight
-}: Props) {
+}: ICourseCard) {
   return (
     <div
       id='courseCardContainer'

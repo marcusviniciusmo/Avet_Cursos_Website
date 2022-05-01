@@ -1,19 +1,13 @@
+import { IBlogArticle } from 'utils/Types';
 import { ToUpperCaseText } from 'utils/Functions';
 import './styles.css';
-
-type Props = {
-  imageUrl: string,
-  imageDescription: string,
-  articleTitle: string,
-  articleText: string
-};
 
 function BlogArticle({
   imageUrl,
   imageDescription,
   articleTitle,
   articleText
-}: Props) {
+}: IBlogArticle) {
   return (
     <div id='blogArticleContainer'>
       <div id="blogArticleLogoContainer">

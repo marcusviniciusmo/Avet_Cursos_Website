@@ -1,11 +1,7 @@
+import { IContactAreaHeader } from 'utils/Types';
 import './styles.css';
 
-type Props = {
-  areaTitle: string,
-  areaText: string
-};
-
-function ContactAreaHeader({ areaTitle, areaText }: Props) {
+function ContactAreaHeader({ areaTitle, areaText }: IContactAreaHeader) {
   return (
     <div id="contactAreaHeaderContainer">
       <div id='contactAreaHeaderTitle'>

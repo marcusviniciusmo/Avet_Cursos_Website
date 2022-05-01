@@ -1,12 +1,8 @@
+import { ICourseDuration } from 'utils/Types';
 import { ToUpperCaseText } from 'utils/Functions';
 import './styles.css';
 
-type Props = {
-  infoHeader?: string,
-  infoBody: string
-};
-
-function CourseDuration({ infoHeader, infoBody }: Props) {
+function CourseDuration({ infoHeader, infoBody }: ICourseDuration) {
   const durationCardWidth = 400;
 
   const header = infoHeader?.split(',');

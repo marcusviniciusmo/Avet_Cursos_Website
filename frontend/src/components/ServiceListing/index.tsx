@@ -1,12 +1,8 @@
+import { IServiceListing } from 'utils/Types';
 import { ToUpperCaseText } from 'utils/Functions';
 import './styles.css';
 
-type Props = {
-  id: string,
-  serviceList: string
-};
-
-function ServiceListing({ id, serviceList }: Props) {
+function ServiceListing({ id, serviceList }: IServiceListing) {
   const services = serviceList.split(',');
 
   return (

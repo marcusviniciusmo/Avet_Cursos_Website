@@ -1,13 +1,12 @@
+import { IIncludedInCourse } from 'utils/Types';
 import { ToUpperCaseText } from 'utils/Functions';
 import './styles.css';
 
-type Props = {
-  imageUrl: string,
-  imageDescription: string,
-  label: string
-};
-
-function IncludedInCourse({ imageUrl, imageDescription, label }: Props) {
+function IncludedInCourse({
+  imageUrl,
+  imageDescription,
+  label
+}: IIncludedInCourse) {
   return (
     <div id='includedInCourseContainer'>
       <div id='includedInCourseLogoContainer'>

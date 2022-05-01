@@ -1,11 +1,8 @@
+import { IUnderConstruction } from 'utils/Types';
 import { ToUpperCaseText } from "utils/Functions";
 import './styles.css';
 
-type Props = {
-  pageTitle: string
-};
-
-function UnderConstruction({ pageTitle }: Props) {
+function UnderConstruction({ pageTitle }: IUnderConstruction) {
   return (
     <div id="underConstructionContainer">
       <div id="underConstructionLoader" />

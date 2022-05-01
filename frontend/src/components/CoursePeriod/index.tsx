@@ -1,12 +1,8 @@
+import { ICoursePeriod } from 'utils/Types';
 import { ToUpperCaseText } from 'utils/Functions';
 import './styles.css';
 
-type Props = {
-  infoHeader: string,
-  infoBody: string
-};
-
-function CoursePeriod({ infoHeader, infoBody }: Props) {
+function CoursePeriod({ infoHeader, infoBody }: ICoursePeriod) {
   const periodCardWidth = 405;
 
   const header = infoHeader.split(',');
