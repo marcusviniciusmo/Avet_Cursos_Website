@@ -1,8 +1,8 @@
 export interface IAppointmentCard {
-  imageUrl: string;
-  imageDescription: string;
-  label: string;
-};
+  imageUrl: string,
+  imageDescription: string,
+  label: string
+}
 
 export interface IBlogArticle {
   imageUrl: string;
