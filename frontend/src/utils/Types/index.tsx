@@ -4,6 +4,11 @@ export interface IAppointmentCard {
   label: string
 }
 
+export interface IAvetMap {
+  mapId: string
+  mapUrl: string
+};
+
 export interface IBlogArticle {
   imageUrl: string;
   imageDescription: string;
