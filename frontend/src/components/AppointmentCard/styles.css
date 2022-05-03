@@ -6,10 +6,17 @@ div#appointmentCardContainer {
   padding: 0 20px;
 }
 
+div#appointmentCardContainer:hover {
+  text-decoration: underline #87868A;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
 div#appointmentCardLogoContainer {
   background: #096439;
   width: 195px;
   height: 195px;
+  margin-top: 10px;
   border-radius: 50%;
 }
 
@@ -21,44 +28,37 @@ div#appointmentCardContainer span {
   text-align: center;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1600px) {
   div#appointmentCardContainer {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1680px) and (max-width: 1919px) {
-  div#appointmentCardContainer {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1600px) and (max-width: 1679px) {
-  div#appointmentCardContainer {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1152px) and (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
   div#appointmentCardContainer {
     margin-top: 30px;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1151px) {
-  div#appointmentCardContainer {
-    margin-top: 30px;
-  }
-}
+@keyframes pulse {
+  0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    background: #EEEEEE;
+    border-radius: 15px;
+	}
 
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  div#appointmentCardContainer {
-    margin-top: 30px;
-  }
-}
+  50% {
+		transform: scale(1);
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, .3);
+    background: #DDDDDD;
+    border-radius: 15px;
+	}
 
-@media screen and (max-width: 799px) {
-  div#appointmentCardContainer {
-    margin-top: 30px;
-  }
+  100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    background: #EEEEEE;
+    border-radius: 15px;
+	}
 }
