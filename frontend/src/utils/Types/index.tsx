@@ -16,6 +16,11 @@ export interface IBlogArticle {
   articleText: string;
 };
 
+export interface IArticle {
+  id: number,
+  content: IBlogArticle
+};
+
 export interface IContactAreaHeader {
   areaTitle: string;
   areaText: string;
