@@ -5,6 +5,13 @@ div#blogArticleContainer {
   margin: 40px auto;
 }
 
+div#blogArticleContainer:hover {
+  box-shadow: 1px 1px 2px 2px #DDDDDD;
+  transform: scale(1.05);
+  transition: .3s all ease-in;
+  cursor: pointer;
+}
+
 div#blogArticleLogoContainer {
   width: 274px;
   height: 274px;
@@ -43,7 +50,12 @@ div#btnLerMais {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1152px) and (max-width: 1279px) {
+div#btnLerMais:hover {
+  background: #096439;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   div#blogArticleLogoContainer {
     width: 220px;
     height: 220px;
@@ -54,26 +66,10 @@ div#btnLerMais {
     max-width: 220px;
     height: auto;
     max-height: 220px;
-  }
-
-  div#btnLerMais {
-    width: 100%;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1151px) {
-  div#blogArticleLogoContainer {
-    width: 220px;
-    height: 220px;
-  }
-
-  div#blogArticleLogoContainer img {
-    width: auto;
-    max-width: 220px;
-    height: auto;
-    max-height: 220px;
-  }
-
   div#blogArticleContent {
     width: 230px;
   }
@@ -81,10 +77,6 @@ div#btnLerMais {
   div#blogArticleTitle {
     font-size: 20px;
     margin-bottom: 10px;
-  }
-
-  div#btnLerMais {
-    width: 100%;
   }
 }
 
@@ -105,21 +97,8 @@ div#btnLerMais {
     max-height: 170px;
   }
 
-  div#blogArticleContent {
-    width: 200px;
-  }
-
-  div#blogArticleTitle {
-    font-size: 15px;
-    text-align: center;
-  }
-
   div#blogArticleText {
     font-size: 11px;
-  }
-
-  div#btnLerMais {
-    width: 100%;
   }
 }
 
@@ -145,7 +124,9 @@ div#btnLerMais {
     height: auto;
     max-height: 150px;
   }
+}
 
+@media screen and (max-width: 1023px) {
   div#blogArticleContent {
     width: 200px;
   }
@@ -154,7 +135,9 @@ div#btnLerMais {
     font-size: 15px;
     text-align: center;
   }
+}
 
+@media screen and (max-width: 1279px) {
   div#btnLerMais {
     width: 100%;
   }
