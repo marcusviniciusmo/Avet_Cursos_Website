@@ -1,5 +1,6 @@
 import { IBlogArticle } from 'utils/Types';
 import { ToUpperCaseText } from 'utils/Functions';
+import { LabelButton } from 'utils/Mocks/BlogArticle';
 import './styles.css';
 
 function BlogArticle({
@@ -21,7 +22,7 @@ function BlogArticle({
           <span>{articleText}</span>
         </div>
         <div id='btnLerMais'>
-          <span>{ToUpperCaseText('Ler Mais')}</span>
+          <span>{ToUpperCaseText(LabelButton)}</span>
         </div>
       </div>
     </div>
