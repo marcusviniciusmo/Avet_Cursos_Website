@@ -14,6 +14,12 @@ div#btnVejaMaisMaterias {
   font-size: 40px;
   text-align: center;
   padding: 35px 0;
+}
+
+div#btnVejaMaisMaterias span:hover {
+  font-weight: bold;
+  text-shadow: 5px 5px #759B3C;
+  transition: .3s all ease-in-out;
   cursor: pointer;
 }
 
@@ -24,14 +30,7 @@ div#btnVejaMaisMaterias {
   }
 }
 
-@media screen and (min-width: 1600px) and (max-width: 1679px) {
-  div#blogArticlesContainer {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1440px) and (max-width: 1599px) {
+@media screen and (min-width: 1440px) and (max-width: 1679px) {
   div#blogArticlesContainer {
     width: 90%;
     margin: 0 auto;
