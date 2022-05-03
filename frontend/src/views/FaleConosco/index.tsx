@@ -1,3 +1,4 @@
+import { ContactAreaHeaders } from 'utils/Mocks/ContactAreaHeader';
 import Header from "components/Header";
 import ContactAreaHeader from "components/ContactAreaHeader";
 import ContactForm from "components/ContactForm";
@@ -14,9 +15,8 @@ function FaleConosco() {
       <Header />
 
       <ContactAreaHeader
-        areaTitle="Contato"
-        areaText={`Entre em contato conosco. Nossa equipe de especialistas está
-          sempre pronta para te atender.`}
+        areaTitle={ContactAreaHeaders[0].areaTitle}
+        areaText={ContactAreaHeaders[0].areaText}
       />
 
       <ContactForm />
@@ -24,9 +24,8 @@ function FaleConosco() {
       <div id="faleConoscoAreaBorder" />
 
       <ContactAreaHeader
-        areaTitle="Localização"
-        areaText={`Av. Vital Brasil, 302 Jd. Bela Vista - CEP 13076-415 -
-          Campinas - SP`}
+        areaTitle={ContactAreaHeaders[1].areaTitle}
+        areaText={ContactAreaHeaders[1].areaText}
       />
 
       <AvetMap />
