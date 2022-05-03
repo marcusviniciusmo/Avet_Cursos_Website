@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ToUpperCaseText } from "utils/Functions";
+import { Fields, SuccessNotification } from 'utils/Mocks/ContactForm';
 import { Toast } from "components/Toast";
 import './styles.css';
 
@@ -46,8 +47,8 @@ function ContactForm() {
       cellPhone.length > 0 &&
       message.length > 0) {
       Toast.fire({
-        icon: 'success',
-        title: 'Sua mensagem foi enviada'
+        icon: SuccessNotification.icon,
+        title: SuccessNotification.message
       });
     }
   };
@@ -60,11 +61,11 @@ function ContactForm() {
         <div className="contactFormRow">
           <div className="contactFormField">
             <input
-              type="text"
-              name="nameField"
-              id="nameField"
-              maxLength={50}
-              placeholder="Nome"
+              type={Fields.content[0].type}
+              name={Fields.content[0].name}
+              id={Fields.content[0].id}
+              maxLength={Fields.content[0].maxLength}
+              placeholder={Fields.content[0].placeholder}
               onChange={handleName}
               value={name}
             />
@@ -72,11 +73,11 @@ function ContactForm() {
 
           <div className="contactFormField">
             <input
-              type="tel"
-              name="phoneField"
-              id="phoneField"
-              maxLength={20}
-              placeholder="Telefone"
+              type={Fields.content[1].type}
+              name={Fields.content[1].name}
+              id={Fields.content[1].id}
+              maxLength={Fields.content[1].maxLength}
+              placeholder={Fields.content[1].placeholder}
               onChange={handlePhone}
               value={phone}
             />
@@ -86,11 +87,11 @@ function ContactForm() {
         <div className="contactFormRow">
           <div className="contactFormField">
             <input
-              type="email"
-              name="emailField"
-              id="emailField"
-              maxLength={50}
-              placeholder="E-mail"
+              type={Fields.content[2].type}
+              name={Fields.content[2].name}
+              id={Fields.content[2].id}
+              maxLength={Fields.content[2].maxLength}
+              placeholder={Fields.content[2].placeholder}
               onChange={handleEmail}
               value={email}
             />
@@ -98,11 +99,11 @@ function ContactForm() {
 
           <div className="contactFormField">
             <input
-              type="tel"
-              name="cellPhoneField"
-              id="cellPhoneField"
-              maxLength={20}
-              placeholder="Celular"
+              type={Fields.content[3].type}
+              name={Fields.content[3].name}
+              id={Fields.content[3].id}
+              maxLength={Fields.content[3].maxLength}
+              placeholder={Fields.content[3].placeholder}
               onChange={handleCellPhone}
               value={cellPhone}
             />
@@ -112,12 +113,12 @@ function ContactForm() {
         <div className="contactFormRow">
           <div className="contactFormField">
             <textarea
-              name="messageField"
-              id="messageField"
-              cols={30}
-              rows={5}
-              maxLength={1000}
-              placeholder="Mensagem"
+              name={Fields.content[4].name}
+              id={Fields.content[4].id}
+              cols={Fields.content[4].cols}
+              rows={Fields.content[4].rows}
+              maxLength={Fields.content[4].maxLength}
+              placeholder={Fields.content[4].placeholder}
               onChange={handleMessage}
               value={message}
             />
@@ -130,7 +131,7 @@ function ContactForm() {
             disabled={isNullForm()}
             onClick={submitForm}
           >
-            {ToUpperCaseText('Enviar')}
+            {ToUpperCaseText(Fields.submitButton.label)}
           </button>
         </div>
       </form>

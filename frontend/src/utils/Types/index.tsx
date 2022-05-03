@@ -1,3 +1,5 @@
+import { SweetAlertIcon } from "sweetalert2";
+
 export interface IAppointmentCard {
   imageUrl: string,
   imageDescription: string,
@@ -30,6 +32,28 @@ export interface ICarouselSlider {
 export interface IContactAreaHeader {
   areaTitle: string;
   areaText: string;
+};
+
+export interface IContactFormFields {
+  type?: string,
+  name: string,
+  id: string,
+  maxLength: number,
+  placeholder: string,
+  cols?: number,
+  rows?: number
+};
+
+export interface IContactForm {
+  content: IContactFormFields[],
+  submitButton: {
+    label: string
+  }
+};
+
+export interface IContactFormNotification {
+  icon: SweetAlertIcon,
+  message: string
 };
 
 export interface ICourseCard {
