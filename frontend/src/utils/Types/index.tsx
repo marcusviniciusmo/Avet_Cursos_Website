@@ -21,6 +21,12 @@ export interface IArticle {
   content: IBlogArticle
 };
 
+export interface ICarouselSlider {
+  imageUrl: string,
+  imageDescription: string,
+  slideInterval: number
+}
+
 export interface IContactAreaHeader {
   areaTitle: string;
   areaText: string;
