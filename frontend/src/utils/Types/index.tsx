@@ -8,6 +8,11 @@ export interface IAppointmentCard {
   label: string
 }
 
+export interface IArticle {
+  id: number,
+  content: IBlogArticle
+};
+
 export interface IAvetMap {
   mapId: string
   mapUrl: string
@@ -20,11 +25,6 @@ export interface IBlogArticle {
   articleText: string;
 };
 
-export interface IArticle {
-  id: number,
-  content: IBlogArticle
-};
-
 export interface ICarouselSlider {
   imageUrl: string,
   imageDescription: string,
@@ -34,6 +34,12 @@ export interface ICarouselSlider {
 export interface IContactAreaHeader {
   areaTitle: string;
   areaText: string;
+};
+
+export interface IContactButton {
+  label: string,
+  IconUI: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string; },
+  className: string
 };
 
 export interface IContactFormFields {
