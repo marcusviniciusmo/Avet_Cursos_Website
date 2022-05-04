@@ -1,4 +1,6 @@
 import { SweetAlertIcon } from "sweetalert2";
+import { SvgIconTypeMap } from "@mui/material";
+import { OverridableComponent } from "@mui/material/OverridableComponent";
 
 export interface IAppointmentCard {
   imageUrl: string,
@@ -54,6 +56,12 @@ export interface IContactForm {
 export interface IContactFormNotification {
   icon: SweetAlertIcon,
   message: string
+};
+
+export interface IContactInfo {
+  icon: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string; },
+  label1: string,
+  label2?: string
 };
 
 export interface ICourseCard {

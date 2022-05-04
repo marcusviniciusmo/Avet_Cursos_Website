@@ -1,27 +1,32 @@
-import PhoneIcon from '@mui/icons-material/Phone';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import AddLocationAltOutlinedIcon from '@mui/icons-material/AddLocationAltOutlined';
+import { ContactInfos } from 'utils/Mocks/ContactInfo';
 import './styles.css';
 
 function ContactInfo() {
+  const getComponent = (Element: any) => {
+    return <Element />
+  };
+
   return (
     <div id='contactInfoContainer'>
-      <div className='contactInfoRow'>
-        <PhoneIcon />
-        <span>(19) 3254-4083 // 99900-4489 (Whats)</span>
-      </div>
-
-      <div className='contactInfoRow'>
-        <MailOutlineIcon />
-        <span>contato@avetcursos.com.br</span>
-      </div>
-
-      <div className='contactInfoRow'>
-        <AddLocationAltOutlinedIcon />
-        <span>
-          Av. Vital Brasil, 302<br /> Jd. Bela Vista - 13076-415 - Campinas/SP
-        </span>
-      </div>
+      {
+        ContactInfos.map((info) => {
+          return (
+            <div className='contactInfoRow'>
+              {getComponent(info.icon)}
+              <span>
+                {info.label1}
+                {
+                  info.label2
+                    ? <>
+                        <br />{info.label2}
+                      </>
+                    : ''
+                }
+              </span>
+            </div>
+          )
+        })
+      }
     </div>
   );
 };
