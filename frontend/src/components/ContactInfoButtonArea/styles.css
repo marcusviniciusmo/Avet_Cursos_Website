@@ -4,7 +4,7 @@ div#contactInfoButtonAreaContainer {
   flex-direction: row;
 }
 
-@media screen and (min-width: 1152px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   div#contactInfoButtonAreaContainer {
     width: 45%;
   }
@@ -12,7 +12,6 @@ div#contactInfoButtonAreaContainer {
 
 @media screen and (min-width: 1024px) and (max-width: 1151px) {
   div#contactInfoButtonAreaContainer {
-    width: 45%;
     margin-left: 20px;
   }
 }
