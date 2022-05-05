@@ -32,15 +32,10 @@ div.contactButtonMensagem:hover {
 div.contactButtonWhatsapp:hover, 
 div.contactButtonMensagem:hover {
   font-weight: bold;
+  animation: pulse 2s linear infinite;
 }
 
-@media screen and (min-width: 1152px) and (max-width: 1279px) {
-  div#contactButtonContainer {
-    width: 200px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1151px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   div#contactButtonContainer {
     width: 200px;
   }
@@ -59,5 +54,14 @@ div.contactButtonMensagem:hover {
   div#contactButtonContainer {
     width: 150px;
     margin: 20px 30px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 50px rgba(0, 0, 0, 0);
   }
 }
