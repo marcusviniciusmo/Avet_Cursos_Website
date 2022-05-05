@@ -1,41 +1,42 @@
-import { ICourseCard } from 'utils/Types';
+import { Courses } from 'utils/Mocks/CourseCard';
 import { ToUpperCaseText } from 'utils/Functions';
 import CourseDuration from 'components/CourseDuration';
 import CoursePeriod from 'components/CoursePeriod';
 import './styles.css';
 
-function CourseCard({
-  imageUrl,
-  imageDescription,
-  courseTitle,
-  durationInfoHeader,
-  durationInfoBody,
-  periodInfoHeader,
-  periodInfoBody,
-  borderRight
-}: ICourseCard) {
+function CourseCard() {
   return (
-    <div
-      id='courseCardContainer'
-      style={{ borderRight: borderRight ? '2px solid #D4E4DC' : 'none' }}
-    >
-      <div id="courseCardLogoContainer">
-        <img src={imageUrl} alt={imageDescription} />
-      </div>
-      <span id='courseCardTitle'>
-        {ToUpperCaseText(courseTitle)}
-      </span>
+    <>
+      {
+        Courses.map((course) => {
+          return (
+            <div
+              id='courseCardContainer'
+              style={{
+                borderRight: course.borderRight ? '2px solid #D4E4DC' : 'none'
+              }}
+            >
+              <div id="courseCardLogoContainer">
+                <img src={course.imageUrl} alt={course.imageDescription} />
+              </div>
+              <span id='courseCardTitle'>
+                {ToUpperCaseText(course.courseTitle)}
+              </span>
 
-      <CourseDuration
-        infoHeader={durationInfoHeader}
-        infoBody={durationInfoBody}
-      />
+              <CourseDuration
+                infoHeader={course.durationInfoHeader}
+                infoBody={course.durationInfoBody}
+              />
 
-      <CoursePeriod
-        infoHeader={periodInfoHeader}
-        infoBody={periodInfoBody}
-      />
-    </div>
+              <CoursePeriod
+                infoHeader={course.periodInfoHeader}
+                infoBody={course.periodInfoBody}
+              />
+            </div>
+          )
+        })
+      }
+    </>
   );
 };
 
