@@ -4,49 +4,9 @@ div#contactInfoButtonAreaContainer {
   flex-direction: row;
 }
 
-div#contactInfoButtonAreaContainer div.contactButton {
-  width: 215px;
-  height: 45px;
-  margin: 0 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-div#contactInfoButtonAreaContainer div.contactButton span {
-  margin: 0 5px;
-}
-
-div#contactInfoButtonAreaContainer div.whatsappButton {
-  background: #DCB55B;
-}
-
-div#contactInfoButtonAreaContainer div.whatsappButton:hover {
-  background: #FFB300;
-}
-
-div#contactInfoButtonAreaContainer div.mensagemButton {
-  background: #AB305A;
-}
-
-div#contactInfoButtonAreaContainer div.mensagemButton:hover {
-  background: #F80053;
-}
-
-div#contactInfoButtonAreaContainer div.whatsappButton:hover, 
-div#contactInfoButtonAreaContainer div.mensagemButton:hover {
-  font-weight: bold;
-}
-
 @media screen and (min-width: 1152px) and (max-width: 1279px) {
   div#contactInfoButtonAreaContainer {
     width: 45%;
-  }
-
-  div#contactInfoButtonAreaContainer div.contactButton {
-    width: 200px;
   }
 }
 
@@ -55,22 +15,11 @@ div#contactInfoButtonAreaContainer div.mensagemButton:hover {
     width: 45%;
     margin-left: 20px;
   }
-
-  div#contactInfoButtonAreaContainer div.contactButton {
-    width: 200px;
-  }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1023px) {
   div#contactInfoButtonAreaContainer {
     width: 30%;
-  }
-
-  div#contactInfoButtonAreaContainer div.contactButton {
-    font-size: 13px;
-    width: 120px;
-    height: 30px;
-    margin: 0 5px;
   }
 }
 
@@ -78,10 +27,5 @@ div#contactInfoButtonAreaContainer div.mensagemButton:hover {
   div#contactInfoButtonAreaContainer {
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  div#contactInfoButtonAreaContainer div.contactButton {
-    width: 150px;
-    margin: 20px 30px;
   }
 }

@@ -6,24 +6,16 @@ import './styles.css';
 function ContactInfoButtonArea() {
   return (
     <div id='contactInfoButtonAreaContainer'>
-      <div className='contactButton whatsappButton'>
-        <span>Whatsapp</span>
-        <WhatsAppIcon />
-      </div>
       <ContactButton
         label='Whatsapp'
         IconUI={WhatsAppIcon}
-        className={'whatsappButton'}
+        className={'contactButtonWhatsapp'}
       />
 
-      <div className='contactButton mensagemButton'>
-        <span>Mensagem</span>
-        <ArrowForwardIcon />
-      </div>
       <ContactButton
         label='Mensagem'
         IconUI={ArrowForwardIcon}
-        className={'mensagemButton'}
+        className={'contactButtonMensagem'}
       />
     </div>
   );

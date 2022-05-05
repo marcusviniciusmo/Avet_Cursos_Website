@@ -1,0 +1,63 @@
+div#contactButtonContainer {
+  width: 215px;
+  height: 45px;
+  margin: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+div#contactButtonContainer span {
+  margin: 0 5px;
+}
+
+div.contactButtonWhatsapp {
+  background: #DCB55B;
+}
+
+div.contactButtonWhatsapp:hover {
+  background: #FFB300;
+}
+
+div.contactButtonMensagem {
+  background: #AB305A;
+}
+
+div.contactButtonMensagem:hover {
+  background: #F80053;
+}
+
+div.contactButtonWhatsapp:hover, 
+div.contactButtonMensagem:hover {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1152px) and (max-width: 1279px) {
+  div#contactButtonContainer {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1151px) {
+  div#contactButtonContainer {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  div#contactButtonContainer {
+    font-size: 13px;
+    width: 120px;
+    height: 30px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  div#contactButtonContainer {
+    width: 150px;
+    margin: 20px 30px;
+  }
+}
