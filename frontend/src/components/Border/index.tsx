@@ -1,8 +1,8 @@
+import './styles.css';
+
 function Border() {
   return (
-    <>
-      borderRight
-    </>
+    <div id='borderContainer' />
   );
 };
 

@@ -11,34 +11,31 @@ function CourseCard() {
       {
         Courses.map((course) => {
           return (
-            <div
-              id='courseCardContainer'
-              style={{
-                borderRight: course.borderRight ? '2px solid #D4E4DC' : 'none'
-              }}
-            >
-              {
-                course.borderRight
-                  ? <Border />
-                  : ''
-              }
-              <div id="courseCardLogoContainer">
-                <img src={course.imageUrl} alt={course.imageDescription} />
+            <>
+              <div id='courseCardContainer' >
+                <div id="courseCardLogoContainer">
+                  <img src={course.imageUrl} alt={course.imageDescription} />
+                </div>
+                <span id='courseCardTitle'>
+                  {ToUpperCaseText(course.courseTitle)}
+                </span>
+
+                <CourseDuration
+                  infoHeader={course.durationInfoHeader}
+                  infoBody={course.durationInfoBody}
+                />
+
+                <CoursePeriod
+                  infoHeader={course.periodInfoHeader}
+                  infoBody={course.periodInfoBody}
+                />
+
               </div>
-              <span id='courseCardTitle'>
-                {ToUpperCaseText(course.courseTitle)}
-              </span>
-
-              <CourseDuration
-                infoHeader={course.durationInfoHeader}
-                infoBody={course.durationInfoBody}
-              />
-
-              <CoursePeriod
-                infoHeader={course.periodInfoHeader}
-                infoBody={course.periodInfoBody}
-              />
-            </div>
+              {
+                course.borderRight &&
+                <Border />
+              }
+            </>
           )
         })
       }
