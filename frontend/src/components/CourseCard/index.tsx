@@ -2,6 +2,7 @@ import { Courses } from 'utils/Mocks/CourseCard';
 import { ToUpperCaseText } from 'utils/Functions';
 import CourseDuration from 'components/CourseDuration';
 import CoursePeriod from 'components/CoursePeriod';
+import Border from 'components/Border';
 import './styles.css';
 
 function CourseCard() {
@@ -16,6 +17,11 @@ function CourseCard() {
                 borderRight: course.borderRight ? '2px solid #D4E4DC' : 'none'
               }}
             >
+              {
+                course.borderRight
+                  ? <Border />
+                  : ''
+              }
               <div id="courseCardLogoContainer">
                 <img src={course.imageUrl} alt={course.imageDescription} />
               </div>
