@@ -3,27 +3,10 @@ import { Button } from "react-bootstrap";
 import Header from "components/Header";
 import CourseCard from "components/CourseCard";
 import IncludedInCourse from "components/IncludedInCourse";
-import ApostilaLogo from 'assets/img/cursos/apostilaLogo.png';
-import CertificadoLogo from 'assets/img/cursos/certificadoLogo.png';
-import EstetoscopioLogo from 'assets/img/cursos/estetoscopioLogo.png';
 import Footer from "components/Footer";
 import './styles.css';
 
 function Cursos() {
-  const includedInCourse = [{
-    imageUrl: `${ApostilaLogo}`,
-    imageDescription: 'Avet Curso - Apostila logo',
-    label: 'Apostila'
-  }, {
-    imageUrl: `${CertificadoLogo}`,
-    imageDescription: 'Avet Curso - Certificado logo',
-    label: 'Certificado'
-  }, {
-    imageUrl: `${EstetoscopioLogo}`,
-    imageDescription: 'Avet Curso - Estetoscopio logo',
-    label: 'Jaleco e Estetoscopio'
-  }];
-
   return (
     <section>
       <Header />
@@ -36,17 +19,8 @@ function Cursos() {
           <span id="includedInCourseLabel">
             {ToUpperCaseText('Incluso em todos os cursos')}
           </span>
-          {
-            includedInCourse.map((included) => {
-              return (
-                <IncludedInCourse
-                  imageUrl={included.imageUrl}
-                  imageDescription={included.imageDescription}
-                  label={included.label}
-                />
-              )
-            })
-          }
+          
+          <IncludedInCourse />
         </div>
 
         <span id="courseNotifications">

@@ -1,19 +1,26 @@
-import { IIncludedInCourse } from 'utils/Types';
+import { Included } from 'utils/Mocks/IncludedInCourse';
 import { ToUpperCaseText } from 'utils/Functions';
 import './styles.css';
 
-function IncludedInCourse({
-  imageUrl,
-  imageDescription,
-  label
-}: IIncludedInCourse) {
+function IncludedInCourse() {
   return (
-    <div id='includedInCourseContainer'>
-      <div id='includedInCourseLogoContainer'>
-        <img src={imageUrl} alt={imageDescription} />
-      </div>
-      <span>{ToUpperCaseText(label)}</span>
-    </div>
+    <>
+      {
+        Included.map((included) => {
+          return (
+            <div id='includedInCourseContainer'>
+              <div id='includedInCourseLogoContainer'>
+                <img
+                  src={included.imageUrl}
+                  alt={included.imageDescription}
+                />
+              </div>
+              <span>{ToUpperCaseText(included.label)}</span>
+            </div>
+          )
+        })
+      }
+    </>
   );
 };
 
