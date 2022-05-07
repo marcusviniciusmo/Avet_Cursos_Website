@@ -121,6 +121,12 @@ export interface IMenuItem {
   id: string;
 };
 
+export interface IPhotoGallery {
+  id: string,
+  imageUrl: string,
+  imageDescription: string
+}
+
 export interface IServiceListing {
   id: string;
   serviceList: string;
