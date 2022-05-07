@@ -102,7 +102,12 @@ export interface IFooter {
 export interface IHeader {
   imageUrl: string,
   imageDescription: string
-}
+};
+
+export interface IImage {
+  imageUrl: string,
+  imageDescription: string
+};
 
 export interface IIncludedInCourse {
   imageUrl: string;
