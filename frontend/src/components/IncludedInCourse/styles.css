@@ -14,11 +14,21 @@ div#includedInCourseLogoContainer {
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  cursor: pointer;
+}
+
+div#includedInCourseLogoContainer:hover {
+  animation: pulse 2s linear infinite
 }
 
 div#includedInCourseContainer span {
   color: #FFFFFF;
   font-size: 20px;
+  cursor: pointer;
+}
+
+div#includedInCourseContainer span:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1151px) {
