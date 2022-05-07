@@ -1,3 +1,4 @@
+import { AppointmentButton, LabelButtonAppointment } from 'utils/Mocks/Consultas';
 import { Button } from "react-bootstrap";
 import { ToUpperCaseText } from "utils/Functions";
 import { Services } from 'utils/Mocks/ServiceListing';
@@ -29,10 +30,10 @@ function Consultas() {
       </div>
 
       <Button
-        id="btnAgendeUmaConsulta"
-        href="/agendarConsultaOnline"
+        id={AppointmentButton.id}
+        href={AppointmentButton.href}
       >
-        {ToUpperCaseText('Agende já uma consulta')}
+        {ToUpperCaseText(LabelButtonAppointment)}
       </Button>
 
       <Footer />

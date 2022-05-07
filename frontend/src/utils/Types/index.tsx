@@ -19,6 +19,11 @@ export interface IAvetMap {
   mapUrl: string
 };
 
+export interface IButton {
+  id: string,
+  href: string
+};
+
 export interface IBlogArticle {
   imageUrl: string;
   imageDescription: string;
