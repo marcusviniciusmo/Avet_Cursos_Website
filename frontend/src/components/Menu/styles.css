@@ -12,25 +12,7 @@ menu#menuContainer ul#menuList {
   padding-inline-start: 0;
 }
 
-@media screen and (min-width: 1152px) and (max-width: 1279px) {
-  menu#menuContainer ul#menuList {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1151px) {
-  menu#menuContainer ul#menuList {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  menu#menuContainer ul#menuList {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 1279px) {
   menu#menuContainer ul#menuList {
     flex-wrap: wrap;
   }
