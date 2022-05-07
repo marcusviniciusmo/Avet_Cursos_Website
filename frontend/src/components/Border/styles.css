@@ -3,3 +3,9 @@ div#borderContainer {
   height: 531px;
   margin: auto;
 }
+
+@media screen and (max-width: 1279px) {
+  div#borderContainer {
+    display: none;
+  }
+}

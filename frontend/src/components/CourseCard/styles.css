@@ -5,6 +5,15 @@ div#courseCardContainer {
   margin: 50px auto 0 auto;
 }
 
+div#courseCardContainer:hover {
+  padding: 2px 0;
+  border: 2px solid #86B144;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  transform: scale(1.10);
+  transition: .8s all ease-in-out;
+}
+
 div#courseCardLogoContainer {
   background: #FFFFFF;
   width: 242px;
@@ -13,6 +22,10 @@ div#courseCardLogoContainer {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+}
+
+div#courseCardLogoContainer:hover {
+  animation: pulse 2s linear infinite;
 }
 
 div#courseCardContainer span#courseCardTitle {
@@ -26,78 +39,25 @@ div#courseCardContainer span#courseCardTitle {
   text-align: center;
 }
 
-@media screen and (min-width: 1920px) {
+div#courseCardLogoContainer:hover,
+div#courseCardContainer span#courseCardTitle {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1280px) {
   div#courseCardContainer {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 1680px) and (max-width: 1919px) {
-  div#courseCardContainer {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1600px) and (max-width: 1679px) {
-  div#courseCardContainer {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1440px) and (max-width: 1599px) {
-  div#courseCardContainer {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1400px) and (max-width: 1439px) {
-  div#courseCardContainer {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1366px) and (max-width: 1399px) {
-  div#courseCardContainer {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1360px) and (max-width: 1365px) {
-  div#courseCardContainer {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1359px) {
-  div#courseCardContainer {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1152px) and (max-width: 1279px) {
+@media screen and (min-width: 800px) and (max-width: 1279px) {
   div#courseCardContainer {
     width: 50%;
-    border-right: none !important;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1151px) {
-  div#courseCardContainer {
-    width: 50%;
-    border-right: none !important;
-  }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  div#courseCardContainer {
-    width: 50%;
-    border-right: none !important;
   }
 }
 
 @media screen and (max-width: 799px) {
   div#courseCardContainer {
     width: 100%;
-    border-right: none !important;
   }
 }
