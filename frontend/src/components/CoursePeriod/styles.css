@@ -25,6 +25,10 @@ div#coursePeriodContainer div#coursePeriodInfo td {
   text-align: center;
 }
 
+div#coursePeriodContainer div#coursePeriodInfo td:hover {
+  background: #6A8D35;
+}
+
 div#coursePeriodContainer div#coursePeriodInfo td#periodInfoHeader {
   color: #FFFFFF;
 }
@@ -32,6 +36,10 @@ div#coursePeriodContainer div#coursePeriodInfo td#periodInfoHeader {
 div#coursePeriodContainer div#coursePeriodInfo td#periodInfoBody {
   color: #86B144;
   font-size: 14px;
+}
+
+div#coursePeriodContainer div#coursePeriodInfo td#periodInfoBody:hover {
+  color: #FFFFFF;
 }
 
 div#coursePeriodContainer div#gradeCurricularLabel {
@@ -44,6 +52,11 @@ div#coursePeriodContainer div#gradeCurricularLabel {
   border-radius: 15px;
   margin-top: -15px;
   padding: 0 30px;
+  cursor: pointer;
+}
+
+div#coursePeriodContainer div#gradeCurricularLabel span:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 799px) {
