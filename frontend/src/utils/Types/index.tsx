@@ -99,6 +99,11 @@ export interface IFooter {
   iconFontAwesome: IconDefinition
 };
 
+export interface IHeader {
+  imageUrl: string,
+  imageDescription: string
+}
+
 export interface IIncludedInCourse {
   imageUrl: string;
   imageDescription: string;
