@@ -20,6 +20,11 @@ div#serviceListingCirurgias li {
   cursor: pointer;
 }
 
+div#serviceListingExames li:hover,
+div#serviceListingCirurgias li:hover {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 1920px) {
   div#serviceListingExames li,
   div#serviceListingCirurgias li {
