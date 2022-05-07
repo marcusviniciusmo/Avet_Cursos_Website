@@ -1,3 +1,4 @@
+import { PageTitle } from 'utils/Mocks/AgendarConsultaOnline';
 import Header from "components/Header";
 import UnderConstruction from "components/UnderConstruction";
 import Footer from "components/Footer";
@@ -8,7 +9,7 @@ function AgendarConsultaOnline() {
       <Header />
 
       <UnderConstruction
-        pageTitle="Agendar Consulta Online"
+        pageTitle={PageTitle.pageTitle}
       />
 
       <Footer />
