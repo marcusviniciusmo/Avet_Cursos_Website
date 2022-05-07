@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import { ToUpperCaseText } from "utils/Functions";
+import { Services } from 'utils/Mocks/ServiceListing';
 import Header from "components/Header";
 import AppointmentCard from "components/AppointmentCard";
 import ServiceListing from "components/ServiceListing";
@@ -17,15 +18,13 @@ function Consultas() {
 
       <div id="serviceListingsContainer">
         <ServiceListing
-          id="serviceListingExames"
-          serviceList="Hemograma,Raio-X,Exame Loren Ipsum,
-            Exame Loren Ipsum,Exame Loren Ipsum"
+          id={Services[0].id}
+          serviceList={Services[0].serviceList}
         />
 
         <ServiceListing
-          id="serviceListingCirurgias"
-          serviceList="Castração,Cirurgia Loren Ipsum,Cirurgia Loren Ipsum,
-            Cirurgia Loren Ipsum,Cirurgia Loren Ipsum"
+          id={Services[1].id}
+          serviceList={Services[1].serviceList}
         />
       </div>
 
