@@ -110,6 +110,12 @@ export interface IIncludedInCourse {
   label: string;
 };
 
+export interface IMenu {
+  to: string,
+  className: string,
+  content: IMenuItem
+}
+
 export interface IMenuItem {
   textButton: string;
   id: string;
