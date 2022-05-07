@@ -1,6 +1,7 @@
 import { SweetAlertIcon } from "sweetalert2";
 import { SvgIconTypeMap } from "@mui/material";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 export interface IAppointmentCard {
   imageUrl: string,
@@ -89,6 +90,13 @@ export interface ICourseDuration {
 export interface ICoursePeriod {
   infoHeader: string;
   infoBody: string;
+};
+
+export interface IFooter {
+  copyrightSymbol: string,
+  getYear: Function,
+  text: string,
+  iconFontAwesome: IconDefinition
 };
 
 export interface IIncludedInCourse {
