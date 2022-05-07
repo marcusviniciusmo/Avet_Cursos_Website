@@ -14,18 +14,16 @@ footer#footerContainer span {
   text-align: center;
 }
 
+footer#footerContainer span:hover {
+  text-decoration: underline;
+}
+
 footer#footerContainer div#footerIcon {
   padding: 0 10px;
   cursor: pointer;
 }
 
-@media screen and (min-width: 1920px) {
-  footer#footerContainer span {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 1680px) and (max-width: 1919px) {
+@media screen and (min-width: 1680px) {
   footer#footerContainer span {
     font-size: 18px;
   }
