@@ -148,6 +148,14 @@ div#photoGalleryContainer ul#photoGalleryList li#photo12:hover {
   transform: scale(1);
 }
 
+.model.open span {
+  color: #FFFFFF;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #CCCCCC;
+}
+
 .model img {
   width: auto;
   max-width: 100%;
