@@ -26,7 +26,12 @@ div#serviceListingsContainer {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1152px) and (max-width: 1279px) {
+#btnAgendeUmaConsulta:hover {
+  animation: pulse 4s linear infinite;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+}
+
+@media screen and (max-width: 1279px) {
   div#appointmentCardsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -35,12 +40,6 @@ div#serviceListingsContainer {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1151px) {
-  div#appointmentCardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-  }
-
   #btnAgendeUmaConsulta {
     font-size: 25px;
     width: 480px;
@@ -49,12 +48,6 @@ div#serviceListingsContainer {
 }
 
 @media screen and (min-width: 800px) and (max-width: 1023px) {
-  div#appointmentCardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-  }
-
   #btnAgendeUmaConsulta {
     font-size: 20px;
     width: 370px;
@@ -63,12 +56,6 @@ div#serviceListingsContainer {
 }
 
 @media screen and (max-width: 799px) {
-  div#appointmentCardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-  }
-
   #btnAgendeUmaConsulta {
     font-size: 18px;
     width: 60%;
