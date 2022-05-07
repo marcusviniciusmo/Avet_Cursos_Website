@@ -89,15 +89,7 @@ li#btnAgendarConsultaOnline:hover {
   }
 }
 
-@media screen and (min-width: 1366px) and (max-width: 1399px) {
-  li {
-    font-size: 13px;
-    width: 135px;
-    margin: 0 3px;
-  }
-}
-
-@media screen and (min-width: 1360px) and (max-width: 1365px) {
+@media screen and (min-width: 1360px) and (max-width: 1399px) {
   li {
     font-size: 13px;
     width: 135px;
@@ -121,15 +113,7 @@ li#btnAgendarConsultaOnline:hover {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1151px) {
-  li {
-    font-size: 11px;
-    width: 120px;
-    margin: 3px;
-  }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
+@media screen and (min-width: 800px) and (max-width: 1151px) {
   li {
     font-size: 11px;
     width: 120px;
