@@ -1,17 +1,20 @@
 import { ICoursePeriod } from 'utils/Types';
 import { ToUpperCaseText } from 'utils/Functions';
+import {
+  PeriodCardWidth,
+  CardLabelHeader,
+  CardLabelFooter
+} from 'utils/Mocks/CoursePeriod';
 import './styles.css';
 
 function CoursePeriod({ infoHeader, infoBody }: ICoursePeriod) {
-  const periodCardWidth = 405;
-
   const header = infoHeader.split(',');
   const body = infoBody.split(',');
 
   return (
     <div id="coursePeriodContainer">
       <div id='periodLabel'>
-        <span>{ToUpperCaseText('Período')}</span>
+        <span>{ToUpperCaseText(CardLabelHeader)}</span>
       </div>
       <div id='coursePeriodInfo'>
         <tr>
@@ -20,7 +23,7 @@ function CoursePeriod({ infoHeader, infoBody }: ICoursePeriod) {
               return (
                 <td
                   id='periodInfoHeader'
-                  style={{ width: (periodCardWidth / header.length) }}
+                  style={{ width: (PeriodCardWidth / header.length) }}
                 >
                   {ToUpperCaseText(h)}
                 </td>
@@ -34,7 +37,7 @@ function CoursePeriod({ infoHeader, infoBody }: ICoursePeriod) {
               return (
                 <td
                   id='periodInfoBody'
-                  style={{ width: (periodCardWidth / body.length) }}
+                  style={{ width: (PeriodCardWidth / body.length) }}
                 >
                   {b}
                 </td>
@@ -44,7 +47,7 @@ function CoursePeriod({ infoHeader, infoBody }: ICoursePeriod) {
         </tr>
       </div>
       <div id='gradeCurricularLabel'>
-        <span>{ToUpperCaseText('Grade Currícular')}</span>
+        <span>{ToUpperCaseText(CardLabelFooter)}</span>
       </div>
     </div>
   );
