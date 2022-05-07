@@ -1,10 +1,9 @@
 import { ICourseDuration } from 'utils/Types';
 import { ToUpperCaseText } from 'utils/Functions';
+import { DurationCardWidth } from 'utils/Mocks/CourseDuration';
 import './styles.css';
 
 function CourseDuration({ infoHeader, infoBody }: ICourseDuration) {
-  const durationCardWidth = 400;
-
   const header = infoHeader?.split(',');
   const body = infoBody.split(',');
 
@@ -17,7 +16,7 @@ function CourseDuration({ infoHeader, infoBody }: ICourseDuration) {
               return (
                 <td
                   id='durationInfoHeader'
-                  style={{ width: (durationCardWidth / header.length) }}
+                  style={{ width: (DurationCardWidth / header.length) }}
                 >
                   {ToUpperCaseText(h)}
                 </td>
@@ -32,7 +31,7 @@ function CourseDuration({ infoHeader, infoBody }: ICourseDuration) {
             return (
               <td
                 id='durationInfoBody'
-                style={{ width: (durationCardWidth / body.length) }}
+                style={{ width: (DurationCardWidth / body.length) }}
               >
                 {b}
               </td>
