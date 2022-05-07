@@ -1,5 +1,6 @@
 import { IUnderConstruction } from 'utils/Types';
 import { ToUpperCaseText } from "utils/Functions";
+import { Message } from 'utils/Mocks/UnderConstruction';
 import './styles.css';
 
 function UnderConstruction({ pageTitle }: IUnderConstruction) {
@@ -7,7 +8,7 @@ function UnderConstruction({ pageTitle }: IUnderConstruction) {
     <div id="underConstructionContainer">
       <div id="underConstructionLoader" />
       <span>
-        {ToUpperCaseText(`A página ${pageTitle} está em construção`)}
+        {ToUpperCaseText(Message(pageTitle))}
       </span>
     </div>
   );
