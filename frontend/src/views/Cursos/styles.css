@@ -46,31 +46,20 @@ span#courseNotifications {
   justify-content: center;
 }
 
-@media screen and (min-width: 1152px) and (max-width: 1279px) {
+#btnMatriculeSeJa:hover {
+  animation: pulse 2s linear infinite;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+  transition: .3s all ease-in;
+}
+
+@media screen and (max-width: 1279px) {
   div#courseCards {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1151px) {
-  div#courseCards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-  div#courseCards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  div#includedCourseCardsContainer span#includedInCourseLabel {
-    font-size: 12px;
-    margin-right: 15px;
-  }
-
+@media screen and (max-width: 1023px) {
   span#courseNotifications {
     width: 70%;
     margin: 0 auto;
@@ -84,12 +73,14 @@ span#courseNotifications {
   }
 }
 
-@media screen and (max-width: 799px) {
-  div#courseCards {
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  div#includedCourseCardsContainer span#includedInCourseLabel {
+    font-size: 12px;
+    margin-right: 15px;
   }
+}
 
+@media screen and (max-width: 799px) {
   div#includedCourseCardsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -99,17 +90,5 @@ span#courseNotifications {
     font-size: 25px;
     width: 100%;
     text-align: center;
-  }
-
-  span#courseNotifications {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  #btnMatriculeSeJa {
-    font-size: 20px;
-    width: 280px;
-    height: 80px;
   }
 }
