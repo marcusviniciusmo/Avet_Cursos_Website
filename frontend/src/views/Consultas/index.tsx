@@ -1,4 +1,4 @@
-import { AppointmentButton, LabelButtonAppointment } from 'utils/Mocks/Consultas';
+import { AppointmentButton } from 'utils/Mocks/Consultas';
 import { Button } from "react-bootstrap";
 import { ToUpperCaseText } from "utils/Functions";
 import { Services } from 'utils/Mocks/ServiceListing';
@@ -33,7 +33,7 @@ function Consultas() {
         id={AppointmentButton.id}
         href={AppointmentButton.href}
       >
-        {ToUpperCaseText(LabelButtonAppointment)}
+        {ToUpperCaseText(AppointmentButton.label)}
       </Button>
 
       <Footer />

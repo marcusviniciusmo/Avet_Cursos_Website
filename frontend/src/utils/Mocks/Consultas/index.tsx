@@ -2,7 +2,6 @@ import { IButton } from 'utils/Types';
 
 export const AppointmentButton: IButton = {
   id: 'btnAgendeUmaConsulta',
-  href: '/agendarConsultaOnline'
+  href: '/agendarConsultaOnline',
+  label: 'Agende já uma consulta'
 };
-
-export const LabelButtonAppointment = 'Agende já uma consulta';

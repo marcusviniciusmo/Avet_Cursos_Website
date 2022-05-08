@@ -1,4 +1,9 @@
 import { ToUpperCaseText } from "utils/Functions";
+import {
+  LabelIncludedInCourse,
+  SpanNotification,
+  RegistrationButton
+} from 'utils/Mocks/Cursos';
 import { Button } from "react-bootstrap";
 import Header from "components/Header";
 import CourseCard from "components/CourseCard";
@@ -17,23 +22,22 @@ function Cursos() {
 
         <div id="includedCourseCardsContainer">
           <span id="includedInCourseLabel">
-            {ToUpperCaseText('Incluso em todos os cursos')}
+            {ToUpperCaseText(LabelIncludedInCourse)}
           </span>
-          
+
           <IncludedInCourse />
         </div>
 
         <span id="courseNotifications">
-          * Uma aula na semana, contendo a parte teórica e prática. ** Aprendizado
-          na prática com atendimentos reais.
+          {SpanNotification}
         </span>
 
         <Button
           variant="light"
-          id="btnMatriculeSeJa"
-          href="/inscricaoOnline"
+          id={RegistrationButton.id}
+          href={RegistrationButton.href}
         >
-          {ToUpperCaseText('Matricule-se Já')}
+          {ToUpperCaseText(RegistrationButton.label)}
         </Button>
         <Footer />
       </div>

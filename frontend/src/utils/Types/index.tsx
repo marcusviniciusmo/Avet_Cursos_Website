@@ -21,7 +21,8 @@ export interface IAvetMap {
 
 export interface IButton {
   id: string,
-  href: string
+  href: string,
+  label: string
 };
 
 export interface IBlogArticle {
