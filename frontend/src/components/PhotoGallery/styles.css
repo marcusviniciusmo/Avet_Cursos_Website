@@ -179,3 +179,11 @@ div#photoGalleryContainer ul#photoGalleryList li#photo12:hover {
   padding: 5px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 799px) {
+  .model.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
