@@ -1,9 +1,9 @@
 import { ContactAreaHeaders } from 'utils/Mocks/ContactAreaHeader';
+import { LogoAvet } from 'utils/Mocks/FaleConosco';
 import Header from "components/Header";
 import ContactAreaHeader from "components/ContactAreaHeader";
 import ContactForm from "components/ContactForm";
 import AvetMap from "components/AvetMap";
-import AvetLogo from 'assets/img/faleConosco/avetLogo.png';
 import ContactInfo from "components/ContactInfo";
 import ContactInfoButtonArea from "components/ContactInfoButtonArea";
 import Footer from "components/Footer";
@@ -31,7 +31,10 @@ function FaleConosco() {
       <AvetMap />
 
       <div id="faleConoscoContactArea">
-        <img src={AvetLogo} alt="Avet Cursos - logo" />
+        <img
+          src={LogoAvet.imageUrl}
+          alt={LogoAvet.imageDescription}
+        />
 
         <ContactInfo />
 
