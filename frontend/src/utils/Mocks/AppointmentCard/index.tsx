@@ -6,23 +6,31 @@ import ProfissionaisEspecializadosLogo from 'assets/img/consultas/profissionaisE
 
 export const Appointments: IAppointmentCard[] = [
   {
-    imageUrl: `${CustoReduzidoLogo}`,
-    imageDescription: 'Custo Reduzido logo',
+    content: {
+      url: `${CustoReduzidoLogo}`,
+      description: 'Custo Reduzido logo',
+    },
     label: 'Custo Reduzido'
   },
   {
-    imageUrl: `${ConsultaParticularLogo}`,
-    imageDescription: 'Consulta Particular logo',
+    content: {
+      url: `${ConsultaParticularLogo}`,
+      description: 'Consulta Particular logo',
+    },
     label: 'Consulta Particular'
   },
   {
-    imageUrl: `${HospitalEscolaLogo}`,
-    imageDescription: 'Hospital Escola logo',
+    content: {
+      url: `${HospitalEscolaLogo}`,
+      description: 'Hospital Escola logo',
+    },
     label: 'Hospital Escola'
   },
   {
-    imageUrl: `${ProfissionaisEspecializadosLogo}`,
-    imageDescription: 'Profissionais Especializados logo',
+    content: {
+      url: `${ProfissionaisEspecializadosLogo}`,
+      description: 'Profissionais Especializados logo',
+    },
     label: 'Profissionais Especializados'
   }
 ];

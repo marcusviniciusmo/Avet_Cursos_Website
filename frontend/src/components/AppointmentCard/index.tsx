@@ -11,8 +11,8 @@ function AppointmentCard() {
             <div id='appointmentCardContainer'>
               <div id="appointmentCardLogoContainer">
                 <img
-                  src={appointment.imageUrl}
-                  alt={appointment.imageDescription}
+                  src={appointment.content.url}
+                  alt={appointment.content.description}
                 />
               </div>
 

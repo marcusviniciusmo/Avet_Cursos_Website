@@ -5,18 +5,24 @@ import EstetoscopioLogo from 'assets/img/cursos/estetoscopioLogo.png';
 
 export const Included: IIncludedInCourse[] = [
   {
-    imageUrl: ApostilaLogo,
-    imageDescription: 'Avet Curso - Apostila logo',
-    label: 'Apostila'
+    label: 'Apostila',
+    content: {
+      url: ApostilaLogo,
+      description: 'Avet Curso - Apostila logo'
+    }
   },
   {
-    imageUrl: CertificadoLogo,
-    imageDescription: 'Avet Curso - Certificado logo',
-    label: 'Certificado'
+    label: 'Certificado',
+    content: {
+      url: CertificadoLogo,
+      description: 'Avet Curso - Certificado logo'
+    }
   },
   {
-    imageUrl: EstetoscopioLogo,
-    imageDescription: 'Avet Curso - Estetoscopio logo',
-    label: 'Jaleco e Estetoscopio'
+    label: 'Jaleco e Estetoscopio',
+    content: {
+      url: EstetoscopioLogo,
+      description: 'Avet Curso - Estetoscopio logo'
+    }
   },
 ];

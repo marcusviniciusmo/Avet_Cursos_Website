@@ -9,8 +9,10 @@ export const Articles: IArticle[] = [
   {
     id: 1,
     content: {
-      imageUrl: FotoMateria2018,
-      imageDescription: "Avet Cursos - logo do artigo",
+      image: {
+        url: FotoMateria2018,
+        description: "Avet Cursos - logo do artigo",
+      },
       articleTitle: "Sucesso na Carreira: 5 dicas para auxiliar veterinários em 2018",
       articleText: `Lorem ipsum varius neque et nibh euismod amet lorem phasellus
         aliquam, conubia rutrum mauris eu pretium vulputate cras molestie.
@@ -22,8 +24,10 @@ export const Articles: IArticle[] = [
   {
     id: 2,
     content: {
-      imageUrl: FotoMateria2019,
-      imageDescription: "Avet Cursos - logo do artigo",
+      image: {
+        url: FotoMateria2019,
+        description: "Avet Cursos - logo do artigo",
+      },
       articleTitle: "Sucesso na Carreira: 5 dicas para auxiliar veterinários em 2019",
       articleText: `Lorem ipsum varius neque et nibh euismod amet lorem phasellus
         aliquam, conubia rutrum mauris eu pretium vulputate cras molestie.
@@ -35,8 +39,10 @@ export const Articles: IArticle[] = [
   {
     id: 3,
     content: {
-      imageUrl: FotoMateria2020,
-      imageDescription: "Avet Cursos - logo do artigo",
+      image: {
+        url: FotoMateria2020,
+        description: "Avet Cursos - logo do artigo",
+      },
       articleTitle: "Sucesso na Carreira: 5 dicas para auxiliar veterinários em 2020",
       articleText: `Lorem ipsum varius neque et nibh euismod amet lorem phasellus
         aliquam, conubia rutrum mauris eu pretium vulputate cras molestie.
@@ -48,8 +54,10 @@ export const Articles: IArticle[] = [
   {
     id: 4,
     content: {
-      imageUrl: FotoMateria2021,
-      imageDescription: "Avet Cursos - logo do artigo",
+      image: {
+        url: FotoMateria2021,
+        description: "Avet Cursos - logo do artigo",
+      },
       articleTitle: "Sucesso na Carreira: 5 dicas para auxiliar veterinários em 2021",
       articleText: `Lorem ipsum varius neque et nibh euismod amet lorem phasellus
         aliquam, conubia rutrum mauris eu pretium vulputate cras molestie.
@@ -61,8 +69,10 @@ export const Articles: IArticle[] = [
   {
     id: 5,
     content: {
-      imageUrl: FotoMateria2022,
-      imageDescription: "Avet Cursos - logo do artigo",
+      image: {
+        url: FotoMateria2022,
+        description: "Avet Cursos - logo do artigo",
+      },
       articleTitle: "Sucesso na Carreira: 5 dicas para auxiliar veterinários em 2022",
       articleText: `Lorem ipsum varius neque et nibh euismod amet lorem phasellus
         aliquam, conubia rutrum mauris eu pretium vulputate cras molestie.

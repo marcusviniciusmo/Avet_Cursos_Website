@@ -2,8 +2,8 @@ import { IImage } from "utils/Types";
 import AvetCursosLogo from 'assets/img/aavet/avetLogo.png';
 
 export const LogoAvet: IImage = {
-  imageUrl: AvetCursosLogo,
-  imageDescription: 'Avet Cursos logo'
+  url: AvetCursosLogo,
+  description: 'Avet Cursos logo'
 };
 
 export const AvetAboutText1 = 

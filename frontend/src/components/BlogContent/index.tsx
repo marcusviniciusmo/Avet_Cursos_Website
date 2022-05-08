@@ -24,8 +24,7 @@ function BlogContent() {
             ? Articles.map((article) => {
               return (
                 <BlogArticle
-                  imageUrl={article.content.imageUrl}
-                  imageDescription={article.content.imageDescription}
+                  image={article.content.image}
                   articleTitle={article.content.articleTitle}
                   articleText={article.content.articleText}
                 />
@@ -36,8 +35,7 @@ function BlogContent() {
               .map((article) => {
                 return (
                   <BlogArticle
-                    imageUrl={article.content.imageUrl}
-                    imageDescription={article.content.imageDescription}
+                    image={article.content.image}
                     articleTitle={article.content.articleTitle}
                     articleText={article.content.articleText}
                   />

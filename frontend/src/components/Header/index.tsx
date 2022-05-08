@@ -6,8 +6,8 @@ function Header() {
   return (
     <header id='headerContainer'>
       <img
-        src={HeaderMock.imageUrl}
-        alt={HeaderMock.imageDescription} />
+        src={HeaderMock.content.url}
+        alt={HeaderMock.content.description} />
 
       <Menu />
     </header>

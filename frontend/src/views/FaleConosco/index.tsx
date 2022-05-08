@@ -32,8 +32,8 @@ function FaleConosco() {
 
       <div id="faleConoscoContactArea">
         <img
-          src={LogoAvet.imageUrl}
-          alt={LogoAvet.imageDescription}
+          src={LogoAvet.url}
+          alt={LogoAvet.description}
         />
 
         <ContactInfo />

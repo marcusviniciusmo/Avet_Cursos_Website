@@ -4,38 +4,35 @@ import { OverridableComponent } from "@mui/material/OverridableComponent";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 export interface IAppointmentCard {
-  imageUrl: string,
-  imageDescription: string,
-  label: string
+  content: IImage;
+  label: string;
 }
 
 export interface IArticle {
-  id: number,
-  content: IBlogArticle
+  id: number;
+  content: IBlogArticle;
 };
 
 export interface IAvetMap {
-  mapId: string
-  mapUrl: string
+  mapId: string;
+  mapUrl: string;
 };
 
 export interface IButton {
-  id: string,
-  href: string,
-  label: string
+  id: string;
+  href: string;
+  label: string;
 };
 
 export interface IBlogArticle {
-  imageUrl: string;
-  imageDescription: string;
+  image: IImage
   articleTitle: string;
   articleText: string;
 };
 
 export interface ICarouselSlider {
-  imageUrl: string,
-  imageDescription: string,
-  slideInterval: number
+  content: IImage;
+  slideInterval: number;
 }
 
 export interface IContactAreaHeader {
@@ -44,42 +41,41 @@ export interface IContactAreaHeader {
 };
 
 export interface IContactButton {
-  label: string,
-  IconUI: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string; },
-  className: string
+  label: string;
+  IconUI: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string; };
+  className: string;
 };
 
 export interface IContactFormFields {
-  type?: string,
-  name: string,
-  id: string,
-  maxLength: number,
-  placeholder: string,
-  cols?: number,
-  rows?: number
+  type?: string;
+  name: string;
+  id: string;
+  maxLength: number;
+  placeholder: string;
+  cols?: number;
+  rows?: number;
 };
 
 export interface IContactForm {
-  content: IContactFormFields[],
+  content: IContactFormFields[];
   submitButton: {
-    label: string
+    label: string;
   }
 };
 
 export interface IContactFormNotification {
-  icon: SweetAlertIcon,
-  message: string
+  icon: SweetAlertIcon;
+  message: string;
 };
 
 export interface IContactInfo {
-  icon: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string; },
-  label1: string,
-  label2?: string
+  icon: OverridableComponent<SvgIconTypeMap<{}, "svg">> & { muiName: string; };
+  label1: string;
+  label2?: string;
 };
 
 export interface ICourseCard {
-  imageUrl: string;
-  imageDescription: string;
+  content: IImage;
   courseTitle: string;
   durationInfoHeader?: string;
   durationInfoBody: string;
@@ -99,32 +95,30 @@ export interface ICoursePeriod {
 };
 
 export interface IFooter {
-  copyrightSymbol: string,
-  getYear: Function,
-  text: string,
-  iconFontAwesome: IconDefinition
+  copyrightSymbol: string;
+  getYear: Function;
+  text: string;
+  iconFontAwesome: IconDefinition;
 };
 
 export interface IHeader {
-  imageUrl: string,
-  imageDescription: string
+  content: IImage;
 };
 
 export interface IImage {
-  imageUrl: string,
-  imageDescription: string
+  url: string;
+  description: string;
 };
 
 export interface IIncludedInCourse {
-  imageUrl: string;
-  imageDescription: string;
   label: string;
+  content: IImage;
 };
 
 export interface IMenu {
-  to: string,
-  className: string,
-  content: IMenuItem
+  to: string;
+  className: string;
+  content: IMenuItem;
 }
 
 export interface IMenuItem {
@@ -133,9 +127,8 @@ export interface IMenuItem {
 };
 
 export interface IPhotoGallery {
-  id: string,
-  imageUrl: string,
-  imageDescription: string
+  id: string;
+  content: IImage;
 }
 
 export interface IServiceListing {

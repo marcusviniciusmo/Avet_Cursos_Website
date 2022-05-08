@@ -11,8 +11,8 @@ function IncludedInCourse() {
             <div id='includedInCourseContainer'>
               <div id='includedInCourseLogoContainer'>
                 <img
-                  src={included.imageUrl}
-                  alt={included.imageDescription}
+                  src={included.content.url}
+                  alt={included.content.description}
                 />
               </div>
               <span>{ToUpperCaseText(included.label)}</span>

@@ -8,8 +8,10 @@ function PhotoGallery() {
   const [model, setModel] = useState(false);
   const [tempImage, setTempImage] = useState<IPhotoGallery>({
     id: '',
-    imageUrl: '',
-    imageDescription: ''
+    content: {
+      url: '',
+      description: ''
+    }
   });
 
   const getImage = (picutre: IPhotoGallery) => {
@@ -20,11 +22,11 @@ function PhotoGallery() {
   return (
     <div id='photoGalleryContainer'>
       <div className={model ? 'model open' : 'model'}>
-        <span>{tempImage.imageDescription}</span>
+        <span>{tempImage.content.description}</span>
 
         <img
-          src={tempImage.imageUrl}
-          alt={tempImage.imageDescription} />
+          src={tempImage.content.url}
+          alt={tempImage.content.description} />
 
         <CloseIcon onClick={() => setModel(false)} />
       </div>
@@ -37,7 +39,7 @@ function PhotoGallery() {
                 id={picture.id}
                 onClick={() => getImage(picture)}
               >
-                <span>{picture.imageDescription}</span>
+                <span>{picture.content.description}</span>
               </li>
             )
           })

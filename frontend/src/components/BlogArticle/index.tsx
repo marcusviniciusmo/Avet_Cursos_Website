@@ -4,15 +4,14 @@ import { LabelButton } from 'utils/Mocks/BlogArticle';
 import './styles.css';
 
 function BlogArticle({
-  imageUrl,
-  imageDescription,
+  image,
   articleTitle,
   articleText
 }: IBlogArticle) {
   return (
     <div id='blogArticleContainer'>
       <div id="blogArticleLogoContainer">
-        <img src={imageUrl} alt={imageDescription} />
+        <img src={image.url} alt={image.description} />
       </div>
       <div id='blogArticleContent'>
         <div id='blogArticleTitle'>

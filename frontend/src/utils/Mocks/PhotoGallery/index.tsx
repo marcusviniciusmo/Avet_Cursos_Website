@@ -15,62 +15,86 @@ import Photo12 from 'assets/img/photoGallery/photo12.png';
 export const Pictures: IPhotoGallery[] = [
   {
     id: 'photo01',
-    imageUrl: Photo01,
-    imageDescription: 'Galeria Avet - Foto 01'
+    content: {
+      url: Photo01,
+      description: 'Galeria Avet - Foto 01'
+    }
   },
   {
     id: 'photo02',
-    imageUrl: Photo02,
-    imageDescription: 'Galeria Avet - Foto 02'
+    content: {
+      url: Photo02,
+      description: 'Galeria Avet - Foto 02'
+    }
   },
   {
     id: 'photo03',
-    imageUrl: Photo03,
-    imageDescription: 'Galeria Avet - Foto 03'
+    content: {
+      url: Photo03,
+      description: 'Galeria Avet - Foto 03'
+    }
   },
   {
     id: 'photo04',
-    imageUrl: Photo04,
-    imageDescription: 'Galeria Avet - Foto 04'
+    content: {
+      url: Photo04,
+      description: 'Galeria Avet - Foto 04'
+    }
   },
   {
     id: 'photo05',
-    imageUrl: Photo05,
-    imageDescription: 'Galeria Avet - Foto 05'
+    content: {
+      url: Photo05,
+      description: 'Galeria Avet - Foto 05'
+    }
   },
   {
     id: 'photo06',
-    imageUrl: Photo06,
-    imageDescription: 'Galeria Avet - Foto 06'
+    content: {
+      url: Photo06,
+      description: 'Galeria Avet - Foto 06'
+    }
   },
   {
     id: 'photo07',
-    imageUrl: Photo07,
-    imageDescription: 'Galeria Avet - Foto 07'
+    content: {
+      url: Photo07,
+      description: 'Galeria Avet - Foto 07'
+    }
   },
   {
     id: 'photo08',
-    imageUrl: Photo08,
-    imageDescription: 'Galeria Avet - Foto 08'
+    content: {
+      url: Photo08,
+      description: 'Galeria Avet - Foto 08'
+    }
   },
   {
     id: 'photo09',
-    imageUrl: Photo09,
-    imageDescription: 'Galeria Avet - Foto 09'
+    content: {
+      url: Photo09,
+      description: 'Galeria Avet - Foto 09'
+    }
   },
   {
     id: 'photo10',
-    imageUrl: Photo10,
-    imageDescription: 'Galeria Avet - Foto 10'
+    content: {
+      url: Photo10,
+      description: 'Galeria Avet - Foto 10'
+    }
   },
   {
     id: 'photo11',
-    imageUrl: Photo11,
-    imageDescription: 'Galeria Avet - Foto 11'
+    content: {
+      url: Photo11,
+      description: 'Galeria Avet - Foto 11'
+    }
   },
   {
     id: 'photo12',
-    imageUrl: Photo12,
-    imageDescription: 'Galeria Avet - Foto 12'
+    content: {
+      url: Photo12,
+      description: 'Galeria Avet - Foto 12'
+    }
   }
 ];

@@ -14,7 +14,7 @@ function CourseCard() {
             <>
               <div id='courseCardContainer' >
                 <div id="courseCardLogoContainer">
-                  <img src={course.imageUrl} alt={course.imageDescription} />
+                  <img src={course.content.url} alt={course.content.description} />
                 </div>
                 <span id='courseCardTitle'>
                   {ToUpperCaseText(course.courseTitle)}

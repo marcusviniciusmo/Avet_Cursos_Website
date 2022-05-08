@@ -6,23 +6,31 @@ import SlideAvet04 from 'assets/img/carouselSlider/banner04.png';
 
 export const Slides: ICarouselSlider[] = [
   {
-    imageUrl: SlideAvet01,
-    imageDescription: 'Slide Avet Cursos',
+    content: {
+      url: SlideAvet01,
+      description: 'Slide Avet Cursos',
+    },
     slideInterval: 2000
   },
   {
-    imageUrl: SlideAvet02,
-    imageDescription: 'Slide Avet Cursos',
+    content: {
+      url: SlideAvet02,
+      description: 'Slide Avet Cursos',
+    },
     slideInterval: 2000
   },
   {
-    imageUrl: SlideAvet03,
-    imageDescription: 'Slide Avet Cursos',
+    content: {
+      url: SlideAvet03,
+      description: 'Slide Avet Cursos',
+    },
     slideInterval: 2000
   },
   {
-    imageUrl: SlideAvet04,
-    imageDescription: 'Slide Avet Cursos',
+    content: {
+      url: SlideAvet04,
+      description: 'Slide Avet Cursos',
+    },
     slideInterval: 2000
   },
 ];

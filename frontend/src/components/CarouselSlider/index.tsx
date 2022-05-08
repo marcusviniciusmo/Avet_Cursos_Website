@@ -13,8 +13,8 @@ function CarouselSlider() {
               <CarouselItem interval={slide.slideInterval}>
                 <img
                   className='d-block w-100'
-                  src={slide.imageUrl}
-                  alt={slide.imageDescription}
+                  src={slide.content.url}
+                  alt={slide.content.description}
                 />
               </CarouselItem>
             )

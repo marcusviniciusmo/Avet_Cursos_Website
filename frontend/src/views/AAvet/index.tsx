@@ -11,7 +11,7 @@ function AAvet() {
 
       <div id="aavetContainer">
         <div id="aavetAreaAbout">
-          <img src={LogoAvet.imageUrl} alt={LogoAvet.imageDescription} />
+          <img src={LogoAvet.url} alt={LogoAvet.description} />
 
           <span>
             {AvetAboutText1}
